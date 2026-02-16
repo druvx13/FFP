@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFP (Freedom For People) License - Version 1.0</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --accent-hover: #2980b9;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+            --code-bg: #f4f4f4;
+            --border-color: #e0e0e0;
+            --success-color: #27ae60;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #444;
+            font-size: 1.2rem;
+            margin-top: 25px;
+        }
+
+        h4 {
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #fff;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Copy Dropdown Section */
+        .copy-section {
+            background-color: #eef7fc;
+            border: 1px solid var(--accent-color);
+            border-radius: 6px;
+            margin: 30px 0;
+            overflow: hidden;
+        }
+
+        details {
+            width: 100%;
+        }
+
+        summary {
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--primary-color);
+            background-color: #eef7fc;
+            list-style: none; /* Hide default triangle */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+        details[open] summary::after {
+            content: '-';
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .dropdown-content {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .license-raw-box {
+            background-color: var(--code-bg);
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            height: 200px;
+            overflow-y: scroll;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.85rem;
+            white-space: pre-wrap;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        .copy-link {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .copy-link:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .copy-link.copied {
+            background-color: var(--success-color);
+        }
+
+        /* Code/Notice Blocks */
+        .notice-box {            background-color: var(--code-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9rem;
+            white-space: pre-wrap;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .section-id {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#copy-section">Copy License</a></li>
+        <li><a href="#preamble">Preamble</a></li>
+        <li><a href="#terms">Terms & Conditions</a></li>
+        <li><a href="#how-to">How to Apply</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <header>
+        <h1>FFP (Freedom For People) License</h1>        <p><strong>Version 1.0</strong></p>
+    </header>
+
+    <!-- New Copy Dropdown Section -->
+    <section id="copy-section" class="copy-section">
+        <details>
+            <summary>Copy Full License Text</summary>
+            <div class="dropdown-content">
+                <p style="text-align: left; font-size: 0.9rem; margin-bottom: 10px;">
+                    Click the link below to copy the entire raw license text to your clipboard.
+                </p>
+                <div class="license-raw-box" id="raw-license-text">
+FFP (FREEDOM FOR PEOPLE) LICENSE
+                              Version 1.0
+
+ Copyright (C) [YEAR] [LICENSOR NAME]
+
+ Everyone is permitted to copy and distribute verbatim copies of this
+ license document. You may also distribute modified copies of this
+ license document for the sole purpose of formatting changes or
+ translation, provided that the legal meaning and effect of the License
+ is not altered and that the modified copy is clearly marked as an
+ unofficial translation or formatting variant.
+
+                                Preamble
+
+ The FFP (Freedom For People) License is a free and permissive license
+ intended to maximize human freedom by ensuring that software,
+ documentation, art, media, data, and other copyrightable works remain
+ available for anyone to use, study, modify, and share.
+
+ This License grants broad permission to use, copy, modify, distribute,
+ and sell the Work, while requiring that recipients receive a copy of
+ this License and that copyright and attribution notices are preserved.
+
+ This License also includes a patent license grant from Contributors,
+ and it protects the commons by terminating patent rights granted under
+ this License if a recipient initiates patent litigation alleging that
+ the Work infringes a patent.
+
+ The Work is provided without warranty, and the Licensor and Contributors
+ disclaim liability for damages.
+
+ The precise terms and conditions follow.
+
+                          TERMS AND CONDITIONS
+
+ 0. Definitions.
+
+  "This License" refers to version 1.0 of the FFP (Freedom For People) License.
+
+  "Copyright" also means copyright-like laws that apply to other kinds of
+ works, such as semiconductor masks.
+
+  "Work" means the original work of authorship, including software,
+ documentation, hardware design files, art, data, or media, that is
+ initially distributed under this License by the Licensor.
+
+  "Contribution" means any original work of authorship, including any
+ modifications or additions to the Work or Derivative Works thereof,
+ that is intentionally submitted for inclusion in the Work by a
+ Contributor, whether submitted by an individual or on behalf of a legal
+ entity.
+
+  "Derivative Work" means any work based upon the Work or Contributions,
+ such as a modification, translation, adaptation, or compilation, which
+ would require permission under applicable copyright law.
+
+  "Distribute" (or "Distribution") means to provide, transfer, publish,
+ or convey a copy of the Work, Contributions, or Derivative Works to a
+ third party, whether in source form, binary form, or any other form.
+
+  Mere interaction with a user through a computer network, without
+ transfer of a copy, is not Distribution.
+
+  "You" (or "Your") means the individual or legal entity exercising
+ permissions granted by this License.
+
+  "Licensor" means the copyright holder(s) or entity authorized by the
+ copyright holder(s) that initially distributes the Work under this
+ License.
+
+  "Contributor" means the Licensor and any other individual or legal
+ entity on behalf of whom a Contribution has been submitted or
+ distributed under this License.
+
+ 1. Basic Permissions.
+
+ All rights granted under this License are granted worldwide, royalty-
+ free, non-exclusive, perpetual, and irrevocable, provided the stated
+ conditions are met.
+
+ You may use the Work and Contributions for any purpose, including
+ commercial, private, educational, or governmental purposes.
+
+ You may reproduce the Work and Contributions, prepare Derivative Works,
+ and Distribute the Work, Contributions, and Derivative Works.
+
+ 2. Grant of Copyright License.
+ 2.1 Licensor Grant.
+
+ Subject to the terms and conditions of this License, the Licensor grants
+ to You a perpetual, worldwide, non-exclusive, royalty-free, irrevocable
+ (except as stated in Section 8) copyright license to reproduce, prepare
+ Derivative Works of, publicly display, publicly perform, sublicense, and
+ Distribute the Work.
+
+ 2.2 Contributor Grant.
+
+ Subject to the terms and conditions of this License, each Contributor
+ grants to You a perpetual, worldwide, non-exclusive, royalty-free,
+ irrevocable (except as stated in Section 8) copyright license to
+ reproduce, prepare Derivative Works of, publicly display, publicly
+ perform, sublicense, and Distribute such Contribution and Derivative
+ Works thereof.
+
+ 2.3 Additional Terms.
+
+ You may Distribute the Work or Derivative Works under additional terms,
+ provided that such terms apply only insofar as they do not conflict
+ with, restrict, or override the rights granted to recipients under this
+ License.
+
+ Recipients must always receive the Work under this License as well.
+
+ 3. Grant of Patent License.
+
+ 3.1 Patent Grant.
+
+ Subject to the terms and conditions of this License, each Contributor
+ grants to You a perpetual, worldwide, non-exclusive, royalty-free,
+ irrevocable (except as stated in Section 8) patent license to make,
+ have made, use, offer to sell, sell, import, and otherwise transfer the
+ Work and Contributions, where such license applies only to those patent
+ claims licensable by such Contributor that are necessarily infringed by
+ their Contribution(s) alone or by combination of their Contribution(s)
+ with the Work.
+
+ 3.2 Patent Litigation (Retaliation).
+
+ If You initiate patent litigation against any entity (including a cross-
+ claim or counterclaim in a lawsuit) alleging that the Work or a
+ Contribution incorporated within the Work constitutes direct or
+ contributory patent infringement, then all patent licenses granted to
+ You under this License for the Work and Contributions shall terminate as
+ of the date such litigation is filed.
+
+ 4. Conditions of Distribution.
+ 4.1 License Text Requirement.
+
+ You must include a copy of this License with any copy of the Work,
+ Contributions, or Derivative Works that You Distribute, in the form of
+ a LICENSE file, documentation, or other reasonable and accessible
+ location.
+
+ 4.2 Preservation of Notices.
+
+ You must retain, in the Work and in any Derivative Works that You
+ Distribute, all copyright notices, license notices, and attribution
+ notices that are present in the Work, except where removal is required
+ by law.
+
+ 4.3 No Lockdown of the Licensed Work.
+
+ When You Distribute the Work or Derivative Works, You may not impose
+ legal, contractual, or technological measures that prevent recipients
+ from exercising the rights granted to them under this License with
+ respect to the Work or Derivative Works.
+
+ This section does not restrict agreements or measures that are unrelated
+ to the exercise of rights in the Work itself.
+
+ 4.4 Hardware and Physical Works.
+
+ Where the Work includes design files for hardware or physical objects,
+ this License grants rights only to the extent that applicable law
+ recognizes copyright or related rights in such design files.
+
+ This License grants no rights in patents except as expressly granted in
+ Section 3.
+
+ 5. Contributions (Inbound = Outbound).
+
+ Any Contribution intentionally submitted for inclusion in the Work shall
+ be licensed under the terms of this License.
+
+ If a Contributor wishes to submit a Contribution under different terms,
+ such Contribution shall not be considered a Contribution under this
+ License unless the Licensor explicitly agrees in writing.
+
+ 6. Trademarks.
+
+ This License does not grant permission to use any trade name, trademark,
+ service mark, or product name of the Licensor or any Contributor, except
+ as required for reasonable and customary use in describing the origin of
+ the Work or reproducing required notices.
+ 7. No Endorsement.
+
+ The names of the Licensor or Contributors may not be used to endorse or
+ promote products derived from this Work without specific prior written
+ permission.
+
+ 8. Termination and Reinstatement.
+
+ 8.1 Automatic Termination.
+
+ Your rights under this License terminate automatically if You fail to
+ comply with the conditions set forth in Section 4 (Conditions of
+ Distribution) or Section 3.2 (Patent Litigation).
+
+ 8.2 Reinstatement for Cure.
+
+ If You cease all violation of this License, then Your license from a
+ particular copyright holder is reinstated:
+
+   (a) Provisionally, unless and until the copyright holder explicitly
+       and finally terminates Your license; and
+
+   (b) Permanently, if the copyright holder fails to notify You of the
+       violation by some reasonable means prior to 60 days after the
+       cessation.
+
+ 8.3 Patent Termination.
+
+ If Your license is terminated under Section 3.2 (Patent Litigation), it
+ shall not be reinstated.
+
+ 9. Disclaimer of Warranty.
+
+ THE WORK AND CONTRIBUTIONS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+ KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND
+ NONINFRINGEMENT. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF
+ THE WORK IS WITH YOU.
+
+ 10. Limitation of Liability.
+
+ IN NO EVENT SHALL THE LICENSOR, COPYRIGHT HOLDERS, OR CONTRIBUTORS BE
+ LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION
+ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION
+ WITH THE WORK, CONTRIBUTIONS, OR THE USE OR OTHER DEALINGS IN THE WORK.
+
+ THIS DISCLAIMER COVERS ALL DAMAGES, INCLUDING DIRECT, INDIRECT,
+ INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, REGARDLESS OF THE CAUSE
+ OR LEGAL THEORY, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGES.
+ 11. Acceptance.
+
+ By exercising the rights granted under this License, You accept and
+ agree to be bound by the terms and conditions of this License. If You
+ do not agree to these terms, You may not use, copy, modify, or
+ Distribute the Work.
+
+ 12. Severability.
+
+ If any provision of this License is held to be invalid, illegal, or
+ unenforceable in any jurisdiction, the validity, legality, and
+ enforceability of the remaining provisions shall not in any way be
+ affected or impaired thereby.
+
+                         END OF TERMS AND CONDITIONS
+                </div>
+                <a href="#" class="copy-link" id="copy-btn" onclick="copyLicense(event)">Copy License to Clipboard</a>
+            </div>
+        </details>
+    </section>
+
+    <section id="license-text">
+        <div class="notice-box" style="border-left-color: #777; background: #fff; border: 1px solid #ddd;">
+            Copyright (C) [YEAR] [LICENSOR NAME]
+
+            Everyone is permitted to copy and distribute verbatim copies of this
+            license document. You may also distribute modified copies of this
+            license document for the sole purpose of formatting changes or
+            translation, provided that the legal meaning and effect of the License
+            is not altered and that the modified copy is clearly marked as an
+            unofficial translation or formatting variant.
+        </div>
+
+        <h2 id="preamble">Preamble</h2>
+        <p>
+            The FFP (Freedom For People) License is a free and permissive license
+            intended to maximize human freedom by ensuring that software,
+            documentation, art, media, data, and other copyrightable works remain
+            available for anyone to use, study, modify, and share.
+        </p>
+        <p>
+            This License grants broad permission to use, copy, modify, distribute,
+            and sell the Work, while requiring that recipients receive a copy of
+            this License and that copyright and attribution notices are preserved.
+        </p>
+        <p>
+            This License also includes a patent license grant from Contributors,
+            and it protects the commons by terminating patent rights granted under
+            this License if a recipient initiates patent litigation alleging that            the Work infringes a patent.
+        </p>
+        <p>
+            The Work is provided without warranty, and the Licensor and Contributors
+            disclaim liability for damages.
+        </p>
+        <p>The precise terms and conditions follow.</p>
+
+        <h2 id="terms">TERMS AND CONDITIONS</h2>
+
+        <h3><span class="section-id">0.</span> Definitions.</h3>
+        <ul>
+            <li><strong>"This License"</strong> refers to version 1.0 of the FFP (Freedom For People) License.</li>
+            <li><strong>"Copyright"</strong> also means copyright-like laws that apply to other kinds of works, such as semiconductor masks.</li>
+            <li><strong>"Work"</strong> means the original work of authorship, including software, documentation, hardware design files, art, data, or media, that is initially distributed under this License by the Licensor.</li>
+            <li><strong>"Contribution"</strong> means any original work of authorship, including any modifications or additions to the Work or Derivative Works thereof, that is intentionally submitted for inclusion in the Work by a Contributor, whether submitted by an individual or on behalf of a legal entity.</li>
+            <li><strong>"Derivative Work"</strong> means any work based upon the Work or Contributions, such as a modification, translation, adaptation, or compilation, which would require permission under applicable copyright law.</li>
+            <li><strong>"Distribute"</strong> (or "Distribution") means to provide, transfer, publish, or convey a copy of the Work, Contributions, or Derivative Works to a third party, whether in source form, binary form, or any other form. Mere interaction with a user through a computer network, without transfer of a copy, is not Distribution.</li>
+            <li><strong>"You"</strong> (or "Your") means the individual or legal entity exercising permissions granted by this License.</li>
+            <li><strong>"Licensor"</strong> means the copyright holder(s) or entity authorized by the copyright holder(s) that initially distributes the Work under this License.</li>
+            <li><strong>"Contributor"</strong> means the Licensor and any other individual or legal entity on behalf of whom a Contribution has been submitted or distributed under this License.</li>
+        </ul>
+
+        <h3><span class="section-id">1.</span> Basic Permissions.</h3>
+        <p>All rights granted under this License are granted worldwide, royalty-free, non-exclusive, perpetual, and irrevocable, provided the stated conditions are met.</p>
+        <p>You may use the Work and Contributions for any purpose, including commercial, private, educational, or governmental purposes.</p>
+        <p>You may reproduce the Work and Contributions, prepare Derivative Works, and Distribute the Work, Contributions, and Derivative Works.</p>
+
+        <h3><span class="section-id">2.</span> Grant of Copyright License.</h3>
+        
+        <h4>2.1 Licensor Grant.</h4>
+        <p>Subject to the terms and conditions of this License, the Licensor grants to You a perpetual, worldwide, non-exclusive, royalty-free, irrevocable (except as stated in Section 8) copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and Distribute the Work.</p>
+
+        <h4>2.2 Contributor Grant.</h4>
+        <p>Subject to the terms and conditions of this License, each Contributor grants to You a perpetual, worldwide, non-exclusive, royalty-free, irrevocable (except as stated in Section 8) copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and Distribute such Contribution and Derivative Works thereof.</p>
+
+        <h4>2.3 Additional Terms.</h4>
+        <p>You may Distribute the Work or Derivative Works under additional terms, provided that such terms apply only insofar as they do not conflict with, restrict, or override the rights granted to recipients under this License.</p>
+        <p>Recipients must always receive the Work under this License as well.</p>
+
+        <h3><span class="section-id">3.</span> Grant of Patent License.</h3>
+        
+        <h4>3.1 Patent Grant.</h4>
+        <p>Subject to the terms and conditions of this License, each Contributor grants to You a perpetual, worldwide, non-exclusive, royalty-free, irrevocable (except as stated in Section 8) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work and Contributions, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work.</p>
+
+        <h4>3.2 Patent Litigation (Retaliation).</h4>
+        <p>If You initiate patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then all patent licenses granted to You under this License for the Work and Contributions shall terminate as of the date such litigation is filed.</p>
+
+        <h3><span class="section-id">4.</span> Conditions of Distribution.</h3>
+                <h4>4.1 License Text Requirement.</h4>
+        <p>You must include a copy of this License with any copy of the Work, Contributions, or Derivative Works that You Distribute, in the form of a LICENSE file, documentation, or other reasonable and accessible location.</p>
+
+        <h4>4.2 Preservation of Notices.</h4>
+        <p>You must retain, in the Work and in any Derivative Works that You Distribute, all copyright notices, license notices, and attribution notices that are present in the Work, except where removal is required by law.</p>
+
+        <h4>4.3 No Lockdown of the Licensed Work.</h4>
+        <p>When You Distribute the Work or Derivative Works, You may not impose legal, contractual, or technological measures that prevent recipients from exercising the rights granted to them under this License with respect to the Work or Derivative Works.</p>
+        <p>This section does not restrict agreements or measures that are unrelated to the exercise of rights in the Work itself.</p>
+
+        <h4>4.4 Hardware and Physical Works.</h4>
+        <p>Where the Work includes design files for hardware or physical objects, this License grants rights only to the extent that applicable law recognizes copyright or related rights in such design files.</p>
+        <p>This License grants no rights in patents except as expressly granted in Section 3.</p>
+
+        <h3><span class="section-id">5.</span> Contributions (Inbound = Outbound).</h3>
+        <p>Any Contribution intentionally submitted for inclusion in the Work shall be licensed under the terms of this License.</p>
+        <p>If a Contributor wishes to submit a Contribution under different terms, such Contribution shall not be considered a Contribution under this License unless the Licensor explicitly agrees in writing.</p>
+
+        <h3><span class="section-id">6.</span> Trademarks.</h3>
+        <p>This License does not grant permission to use any trade name, trademark, service mark, or product name of the Licensor or any Contributor, except as required for reasonable and customary use in describing the origin of the Work or reproducing required notices.</p>
+
+        <h3><span class="section-id">7.</span> No Endorsement.</h3>
+        <p>The names of the Licensor or Contributors may not be used to endorse or promote products derived from this Work without specific prior written permission.</p>
+
+        <h3><span class="section-id">8.</span> Termination and Reinstatement.</h3>
+        
+        <h4>8.1 Automatic Termination.</h4>
+        <p>Your rights under this License terminate automatically if You fail to comply with the conditions set forth in Section 4 (Conditions of Distribution) or Section 3.2 (Patent Litigation).</p>
+
+        <h4>8.2 Reinstatement for Cure.</h4>
+        <p>If You cease all violation of this License, then Your license from a particular copyright holder is reinstated:</p>
+        <ul>
+            <li>(a) Provisionally, unless and until the copyright holder explicitly and finally terminates Your license; and</li>
+            <li>(b) Permanently, if the copyright holder fails to notify You of the violation by some reasonable means prior to 60 days after the cessation.</li>
+        </ul>
+
+        <h4>8.3 Patent Termination.</h4>
+        <p>If Your license is terminated under Section 3.2 (Patent Litigation), it shall not be reinstated.</p>
+
+        <h3><span class="section-id">9.</span> Disclaimer of Warranty.</h3>
+        <p>THE WORK AND CONTRIBUTIONS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NONINFRINGEMENT. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE WORK IS WITH YOU.</p>
+
+        <h3><span class="section-id">10.</span> Limitation of Liability.</h3>
+        <p>IN NO EVENT SHALL THE LICENSOR, COPYRIGHT HOLDERS, OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE WORK, CONTRIBUTIONS, OR THE USE OR OTHER DEALINGS IN THE WORK.</p>
+        <p>THIS DISCLAIMER COVERS ALL DAMAGES, INCLUDING DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, REGARDLESS OF THE CAUSE OR LEGAL THEORY, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+
+        <h3><span class="section-id">11.</span> Acceptance.</h3>
+        <p>By exercising the rights granted under this License, You accept and agree to be bound by the terms and conditions of this License. If You do not agree to these terms, You may not use, copy, modify, or Distribute the Work.</p>
+
+        <h3><span class="section-id">12.</span> Severability.</h3>        <p>If any provision of this License is held to be invalid, illegal, or unenforceable in any jurisdiction, the validity, legality, and enforceability of the remaining provisions shall not in any way be affected or impaired thereby.</p>
+        
+        <p style="text-align: center; font-weight: bold; margin-top: 40px;">END OF TERMS AND CONDITIONS</p>
+    </section>
+
+    <hr style="border: 0; border-top: 2px solid #eee; margin: 60px 0;">
+
+    <section id="how-to">
+        <h2>HOW TO APPLY THE FFP LICENSE TO YOUR WORK</h2>
+        <p>To apply the FFP (Freedom For People) License to your Work, follow the steps below.</p>
+        <p>It is recommended that you:</p>
+        <ol>
+            <li>Place a full copy of the FFP (Freedom For People) License text in a file named "LICENSE" (or "COPYING") in the top-level directory of your Work.</li>
+            <li>Add the notice below to the main README file and/or the header of important source files.</li>
+            <li>Ensure that all copyright notices, license notices, and attribution notices included in the Work are preserved in any redistributed copies or Derivative Works, as required by the License.</li>
+        </ol>
+        <p>You may replace the bracketed placeholders with your own information.</p>
+
+        <div class="notice-box">
+Copyright (C) [YEAR] [FULL NAME OF LICENSOR OR ORGANIZATION]
+
+This Work is licensed under the FFP (Freedom For People) License,
+Version 1.0.
+
+A copy of this License must be included in the LICENSE file distributed
+with this Work.
+
+You may also obtain a copy of the License at:
+[OFFICIAL LICENSE URL, IF PUBLISHED]
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED.
+        </div>
+
+        <p>If your Work includes interactive user interfaces, it is recommended (but not required) that you display an appropriate notice stating that the Work is licensed under the FFP License and that it comes without warranty.</p>
+        
+        <p style="text-align: center; font-weight: bold; margin-top: 40px;">END OF APPLICATION GUIDE</p>
+    </section>
+
+    <footer>
+        <p>&copy; FFP License Project. Released under the FFP (Freedom For People) License.</p>
+    </footer>
+</div>
+
+<script>
+    function copyLicense(event) {
+        event.preventDefault();
+        const textToCopy = document.getElementById('raw-license-text').innerText;
+        const btn = document.getElementById('copy-btn');
+        const originalText = btn.innerText;
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            btn.innerText = "Copied!";
+            btn.classList.add('copied');
+            
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.classList.remove('copied');
+            }, 2000);
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+            btn.innerText = "Failed to Copy";
+            setTimeout(() => {
+                btn.innerText = originalText;
+            }, 2000);
+        });
+    }
+</script>
+
+</body>
+</html>
