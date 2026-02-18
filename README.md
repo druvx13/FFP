@@ -49,6 +49,8 @@ When using works licensed under FFP:
 - ❓ [FAQ](FAQ.md) - Frequently Asked Questions
 - 🔄 [License Comparison](COMPARISON.md) - How FFP compares to other licenses
 - 🤝 [Contributing](CONTRIBUTING.md) - How to contribute to the FFP License project
+- 📋 [Requirements Specification](REQUIREMENTS.md) - Comprehensive project requirements
+- 📊 [Requirement Analysis](REQUIREMENT_ANALYSIS.md) - Detailed analysis and assessment
 
 ## Badges
 
