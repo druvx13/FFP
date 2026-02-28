@@ -204,9 +204,6 @@ FFP License v2.0 introduced the following improvements over v1.0:
 - **Stronger liability caps**: Jurisdictional carve-outs for warranty and liability disclaimers.
 - **Patent clause broadened**: Now covers patent litigation threats, not just filed suits.
 
-> ⚠️ **Disclaimer**: FFP License v2.0 was developed with AI assistance for informational
-> purposes. It does not constitute legal advice. Consult a qualified attorney.
-
 ### What version of FFP should I use?
 
 Currently, only **Version 2.0** of the FFP License is the current stable release. Use this version for new projects. Version 1.0 is superseded.
@@ -253,12 +250,12 @@ Contributors who submitted under v2.0 have granted rights under v2.0 terms.
 - **License Text**: [LICENSE](LICENSE)
 - **Comparison Guide**: [COMPARISON.md](COMPARISON.md)
 
-### Who can I contact for legal advice?
+### Who can I contact with questions?
 
-The FFP License project cannot provide legal advice. For specific legal questions:
-- Consult with a qualified attorney
-- Contact a legal professional familiar with open-source licensing
-- Refer to your organization's legal department
+For questions about the FFP License:
+- Open an issue on the [GitHub repository](https://github.com/druvx13/FFP/issues)
+- Start a discussion in [GitHub Discussions](https://github.com/druvx13/FFP/discussions)
+- Review the full license text and other documentation in this repository
 
 ### How can I contribute to the FFP License project?
 
@@ -268,6 +265,3 @@ See our [CONTRIBUTING.md](CONTRIBUTING.md) guide for information on:
 - Contributing documentation
 - Participating in discussions
 
----
-
-**Note**: This FAQ is for informational purposes only and does not constitute legal advice. For specific legal questions, consult with a qualified attorney.

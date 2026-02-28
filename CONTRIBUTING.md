@@ -180,7 +180,7 @@ For documentation:
 ### Special Considerations for License Text
 
 ⚠️ **Important**: The license legal text in the LICENSE file and the terms section of the website should only be modified:
-- With legal review and approval by a qualified legal professional
+- With maintainer review and explicit written approval
 - For critical bug fixes that affect legal interpretation
 - For official version updates (e.g., v2.0 → v3.0)
 

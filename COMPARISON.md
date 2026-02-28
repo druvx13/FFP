@@ -249,14 +249,10 @@ Choose FFP when you want a modern, permissive license with patent protection tha
 
 ---
 
-**Note**: This comparison is for informational purposes only. For specific legal advice, consult with a qualified attorney.
 
 **Last Updated**: 2026
 
 ## FFP v1.0 vs v2.0
-
-> ⚠️ **Disclaimer**: The comparison below is informational only and does not constitute legal
-> advice. Consult a qualified attorney.
 
 | Aspect | v1.0 | v2.0 |
 |--------|------|------|

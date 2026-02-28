@@ -22,9 +22,6 @@ The **FFP (Freedom For People) License** is a free and permissive open-source li
 - ✅ **Version Path**: "v2.0 or later" upgrade path supported
 - ✅ **Clear Terms**: Comprehensive, well-structured license conditions
 
-> ⚠️ **Legal Disclaimer**: The FFP License was drafted with AI assistance for informational
-> purposes. It does not constitute legal advice. Consult a qualified attorney before deploying
-> it in commercial or high-stakes contexts.
 
 ## Quick Start
 

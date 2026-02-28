@@ -40,10 +40,6 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [2.0.0] — 2026-02-28
 
-> ⚠️ **Disclaimer**: FFP License v2.0 was developed with AI assistance for informational and
-> drafting purposes only. It does not constitute legal advice. A qualified legal professional
-> should review the license before deployment in commercial or high-stakes contexts.
-
 ### Phase 1 — License Audit Findings (v1.0)
 
 The following issues were identified in v1.0 and addressed in v2.0:
@@ -57,7 +53,7 @@ The following issues were identified in v1.0 and addressed in v2.0:
 - **`Effective Date` absent** — no anchor for when rights begin (fixed: defined in Section 0).
 - **Patent Retaliation clause too narrow** — only covered litigation "filed"; threats were
   excluded (fixed: Section 3.2 now covers initiation, maintenance, *or* threats).
-- **No `Lockdown` clause lacked DRM/TPM specificity** — "technological measures" was vague
+- **Anti-Lockdown clause lacked DRM/TPM specificity** — "technological measures" was vague
   (fixed: Section 4.3 explicitly names DRM and TPM with carve-outs for encryption).
 - **No AI/ML Training provision** — modern use case unaddressed (fixed: Section 4.5 added).
 - **Reinstatement window undefined** — "cease all violation" had no cure deadline
@@ -86,7 +82,6 @@ The following issues were identified in v1.0 and addressed in v2.0:
 - Entire Agreement clause (Section 15).
 - Later Versions clause with "v2.0 or later" support (Section 16).
 - Governing Law and Dispute Resolution provision (Section 17).
-- AI Disclaimer in Preamble.
 
 ### Changed in v2.0
 
@@ -98,7 +93,7 @@ The following issues were identified in v1.0 and addressed in v2.0:
 - Section 9 (Warranty Disclaimer) adds jurisdictional minimum-warranty carve-out.
 - Section 10 (Liability Limitation) adds loss-of-profits/data/goodwill coverage and
   jurisdictional minimum-liability carve-out.
-- Application Guide updated to reference v2.0 and include AI disclaimer.
+- Application Guide updated to reference v2.0.
 
 ---
 
