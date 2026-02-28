@@ -2,6 +2,7 @@
 
 [![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg)](https://github.com/druvx13/FFP)
 [![Version](https://img.shields.io/badge/version-1.0-green.svg)](https://github.com/druvx13/FFP)
+[![Website](https://img.shields.io/badge/website-live-brightgreen.svg)](https://druvx13.github.io/FFP/)
 
 ## Overview
 
@@ -44,11 +45,42 @@ When using works licensed under FFP:
 
 ## Documentation
 
-- 📖 [Full License Text](LICENSE) - Complete FFP License v1.0
-- 🌐 [Official Website](https://druvx13.github.io/FFP/) - Interactive license viewer
-- ❓ [FAQ](FAQ.md) - Frequently Asked Questions
-- 🔄 [License Comparison](COMPARISON.md) - How FFP compares to other licenses
-- 🤝 [Contributing](CONTRIBUTING.md) - How to contribute to the FFP License project
+- 📖 [Full License Text](LICENSE) — Complete FFP License v1.0
+- 🌐 [Official Website](https://druvx13.github.io/FFP/) — Interactive license viewer
+- ❓ [FAQ](FAQ.md) — Frequently Asked Questions
+- 🔄 [License Comparison](COMPARISON.md) — How FFP compares to other licenses
+- 🤝 [Contributing](CONTRIBUTING.md) — How to contribute to the FFP License project
+- 📋 [Changelog](CHANGELOG.md) — Project history and release notes
+
+## Repository Structure
+
+```
+FFP/
+├── LICENSE                  # The FFP License text
+├── README.md                # This file
+├── FAQ.md                   # Frequently Asked Questions
+├── COMPARISON.md            # Comparison with other licenses
+├── CONTRIBUTING.md          # Contribution guidelines
+├── CHANGELOG.md             # Project changelog
+├── BADGES.md                # Badge usage reference
+├── PROJECT_SUMMARY.md       # High-level project summary
+└── docs/                    # GitHub Pages website
+    ├── index.html           # License text page
+    ├── faq.html             # FAQ page
+    ├── comparison.html      # Comparison page
+    ├── badges.html          # Badge gallery page
+    ├── css/
+    │   └── styles.css       # Shared stylesheet (dark mode, responsive)
+    ├── js/
+    │   └── main.js          # Shared JavaScript (nav toggle, clipboard)
+    └── badges/              # SVG badge files
+        ├── license-ffp-blue.svg
+        ├── license-ffp-green.svg
+        ├── license-ffp-orange.svg
+        ├── license-ffp-flat.svg
+        ├── ffp-full-blue.svg
+        └── ffp-simple-green.svg
+```
 
 ## Badges
 

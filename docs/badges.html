@@ -1,333 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Badges - FFP License</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            background: #fff;
-            padding: 15px 0;
-            border-bottom: 1px solid #e0e0e0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        nav a {
-            color: #2c3e50;
-            text-decoration: none;
-            padding: 8px 15px;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-
-        nav a:hover, nav a.active {
-            background-color: #3498db;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 40px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-radius: 8px;
-        }
-
-        h1 {
-            color: #2c3e50;
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 20px;
-        }
-
-        h2 {
-            color: #2c3e50;
-            font-size: 1.5rem;
-            margin-top: 40px;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 10px;
-        }
-
-        .badge-section {
-            background-color: #f9f9f9;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .badge-preview {
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 4px;
-            margin: 15px 0;
-            text-align: center;
-        }
-
-        .badge-preview img {
-            vertical-align: middle;
-        }
-
-        .code-block {
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 15px;
-            border-radius: 4px;
-            overflow-x: auto;
-            margin: 10px 0;
-            font-family: "Courier New", Courier, monospace;
-            font-size: 0.9rem;
-        }
-
-        .copy-button {
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            margin-top: 10px;
-            transition: background-color 0.2s;
-        }
-
-        .copy-button:hover {
-            background-color: #2980b9;
-        }
-
-        .copy-button.copied {
-            background-color: #27ae60;
-        }
-
-        .badge-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
-        }
-
-        .badge-card {
-            background: #fff;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .badge-card h3 {
-            margin-top: 0;
-            font-size: 1rem;
-            color: #2c3e50;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            font-size: 0.85rem;
-            color: #777;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                margin: 0;
-                border-radius: 0;
-                padding: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FFP License badges for your project — multiple styles and colours available.">
+  <meta property="og:title" content="Badges — FFP License">
+  <meta property="og:description" content="FFP License badges for your project — multiple styles and colours available.">
+  <meta property="og:type" content="website">
+  <title>Badges — FFP (Freedom For People) License</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">License Text</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="comparison.html">Comparison</a></li>
-        <li><a href="badges.html" class="active">Badges</a></li>
-        <li><a href="https://github.com/druvx13/FFP" target="_blank">GitHub</a></li>
+<nav class="site-nav" aria-label="Site navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">FFP License</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <line x1="3" y1="6"  x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html">License</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="comparison.html">Comparison</a></li>
+      <li><a href="badges.html" class="active" aria-current="page">Badges</a></li>
+      <li><a href="https://github.com/druvx13/FFP" target="_blank" rel="noopener noreferrer">GitHub</a></li>
     </ul>
+  </div>
 </nav>
 
-<div class="container">
-    <h1>FFP License Badges</h1>
-    <p>Display the FFP License badge on your project to show that it's licensed under the FFP (Freedom For People) License.</p>
+<main>
+  <div class="container">
+    <header class="page-header">
+      <h1>FFP License Badges</h1>
+      <p class="subtitle">Display the FFP License badge on your project to show that it&#39;s licensed under the FFP (Freedom For People) License.</p>
+    </header>
 
-    <h2>Popular Badge Styles</h2>
+    <h2>Shields.io Badge Styles</h2>
 
     <div class="badge-grid">
-        <div class="badge-card">
-            <h3>Standard Blue</h3>
-            <div class="badge-preview">
-                <img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg" alt="FFP License">
-            </div>
-            <button class="copy-button" onclick="copyBadge('[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg)](https://github.com/druvx13/FFP)', this)">Copy Markdown</button>
+      <div class="badge-card">
+        <h3>Standard Blue</h3>
+        <div class="badge-preview">
+          <img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg" alt="FFP License — blue badge">
         </div>
+        <button class="copy-button" type="button"
+          data-copy="[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg)](https://github.com/druvx13/FFP)">
+          Copy Markdown
+        </button>
+      </div>
 
-        <div class="badge-card">
-            <h3>Green</h3>
-            <div class="badge-preview">
-                <img src="https://img.shields.io/badge/license-FFP%20v1.0-brightgreen.svg" alt="FFP License">
-            </div>
-            <button class="copy-button" onclick="copyBadge('[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-brightgreen.svg)](https://github.com/druvx13/FFP)', this)">Copy Markdown</button>
+      <div class="badge-card">
+        <h3>Green</h3>
+        <div class="badge-preview">
+          <img src="https://img.shields.io/badge/license-FFP%20v1.0-brightgreen.svg" alt="FFP License — green badge">
         </div>
+        <button class="copy-button" type="button"
+          data-copy="[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-brightgreen.svg)](https://github.com/druvx13/FFP)">
+          Copy Markdown
+        </button>
+      </div>
 
-        <div class="badge-card">
-            <h3>Orange</h3>
-            <div class="badge-preview">
-                <img src="https://img.shields.io/badge/license-FFP%20v1.0-orange.svg" alt="FFP License">
-            </div>
-            <button class="copy-button" onclick="copyBadge('[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-orange.svg)](https://github.com/druvx13/FFP)', this)">Copy Markdown</button>
+      <div class="badge-card">
+        <h3>Orange</h3>
+        <div class="badge-preview">
+          <img src="https://img.shields.io/badge/license-FFP%20v1.0-orange.svg" alt="FFP License — orange badge">
         </div>
+        <button class="copy-button" type="button"
+          data-copy="[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-orange.svg)](https://github.com/druvx13/FFP)">
+          Copy Markdown
+        </button>
+      </div>
 
-        <div class="badge-card">
-            <h3>Flat Square</h3>
-            <div class="badge-preview">
-                <img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=flat-square" alt="FFP License">
-            </div>
-            <button class="copy-button" onclick="copyBadge('[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=flat-square)](https://github.com/druvx13/FFP)', this)">Copy Markdown</button>
+      <div class="badge-card">
+        <h3>Flat Square</h3>
+        <div class="badge-preview">
+          <img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=flat-square" alt="FFP License — flat square badge">
         </div>
+        <button class="copy-button" type="button"
+          data-copy="[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=flat-square)](https://github.com/druvx13/FFP)">
+          Copy Markdown
+        </button>
+      </div>
 
-        <div class="badge-card">
-            <h3>For The Badge</h3>
-            <div class="badge-preview">
-                <img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=for-the-badge" alt="FFP License">
-            </div>
-            <button class="copy-button" onclick="copyBadge('[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=for-the-badge)](https://github.com/druvx13/FFP)', this)">Copy Markdown</button>
+      <div class="badge-card">
+        <h3>For The Badge</h3>
+        <div class="badge-preview">
+          <img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=for-the-badge" alt="FFP License — for the badge style">
         </div>
+        <button class="copy-button" type="button"
+          data-copy="[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=for-the-badge)](https://github.com/druvx13/FFP)">
+          Copy Markdown
+        </button>
+      </div>
 
-        <div class="badge-card">
-            <h3>Plastic</h3>
-            <div class="badge-preview">
-                <img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=plastic" alt="FFP License">
-            </div>
-            <button class="copy-button" onclick="copyBadge('[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=plastic)](https://github.com/druvx13/FFP)', this)">Copy Markdown</button>
+      <div class="badge-card">
+        <h3>Plastic</h3>
+        <div class="badge-preview">
+          <img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=plastic" alt="FFP License — plastic style badge">
         </div>
+        <button class="copy-button" type="button"
+          data-copy="[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=plastic)](https://github.com/druvx13/FFP)">
+          Copy Markdown
+        </button>
+      </div>
     </div>
 
     <h2>Local SVG Badges</h2>
-    <p>You can also use the SVG badges hosted in this repository:</p>
+    <p>You can also use the SVG badges hosted directly in this repository:</p>
 
     <div class="badge-section">
-        <h3>Blue Badge</h3>
-        <div class="badge-preview">
-            <img src="badges/license-ffp-blue.svg" alt="FFP License">
-        </div>
-        <div class="code-block">[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-blue.svg)](https://github.com/druvx13/FFP)</div>
-        <button class="copy-button" onclick="copyBadge('[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-blue.svg)](https://github.com/druvx13/FFP)', this)">Copy Markdown</button>
+      <h3>Blue Badge</h3>
+      <div class="badge-preview">
+        <img src="badges/license-ffp-blue.svg" alt="FFP License — local blue SVG badge">
+      </div>
+      <div class="code-block">[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-blue.svg)](https://github.com/druvx13/FFP)</div>
+      <button class="copy-button" type="button"
+        data-copy="[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-blue.svg)](https://github.com/druvx13/FFP)">
+        Copy Markdown
+      </button>
     </div>
 
     <div class="badge-section">
-        <h3>Green Badge</h3>
-        <div class="badge-preview">
-            <img src="badges/license-ffp-green.svg" alt="FFP License">
-        </div>
-        <div class="code-block">[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-green.svg)](https://github.com/druvx13/FFP)</div>
-        <button class="copy-button" onclick="copyBadge('[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-green.svg)](https://github.com/druvx13/FFP)', this)">Copy Markdown</button>
+      <h3>Green Badge</h3>
+      <div class="badge-preview">
+        <img src="badges/license-ffp-green.svg" alt="FFP License — local green SVG badge">
+      </div>
+      <div class="code-block">[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-green.svg)](https://github.com/druvx13/FFP)</div>
+      <button class="copy-button" type="button"
+        data-copy="[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-green.svg)](https://github.com/druvx13/FFP)">
+        Copy Markdown
+      </button>
     </div>
 
     <div class="badge-section">
-        <h3>Orange Badge</h3>
-        <div class="badge-preview">
-            <img src="badges/license-ffp-orange.svg" alt="FFP License">
-        </div>
-        <div class="code-block">[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-orange.svg)](https://github.com/druvx13/FFP)</div>
-        <button class="copy-button" onclick="copyBadge('[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-orange.svg)](https://github.com/druvx13/FFP)', this)">Copy Markdown</button>
+      <h3>Orange Badge</h3>
+      <div class="badge-preview">
+        <img src="badges/license-ffp-orange.svg" alt="FFP License — local orange SVG badge">
+      </div>
+      <div class="code-block">[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-orange.svg)](https://github.com/druvx13/FFP)</div>
+      <button class="copy-button" type="button"
+        data-copy="[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-orange.svg)](https://github.com/druvx13/FFP)">
+        Copy Markdown
+      </button>
     </div>
 
     <div class="badge-section">
-        <h3>Full Name Badge</h3>
-        <div class="badge-preview">
-            <img src="badges/ffp-full-blue.svg" alt="Freedom For People License">
-        </div>
-        <div class="code-block">[![Freedom For People License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/ffp-full-blue.svg)](https://github.com/druvx13/FFP)</div>
-        <button class="copy-button" onclick="copyBadge('[![Freedom For People License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/ffp-full-blue.svg)](https://github.com/druvx13/FFP)', this)">Copy Markdown</button>
+      <h3>Full Name Badge</h3>
+      <div class="badge-preview">
+        <img src="badges/ffp-full-blue.svg" alt="Freedom For People License — full name badge">
+      </div>
+      <div class="code-block">[![Freedom For People License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/ffp-full-blue.svg)](https://github.com/druvx13/FFP)</div>
+      <button class="copy-button" type="button"
+        data-copy="[![Freedom For People License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/ffp-full-blue.svg)](https://github.com/druvx13/FFP)">
+        Copy Markdown
+      </button>
     </div>
 
     <div class="badge-section">
-        <h3>Simple Badge</h3>
-        <div class="badge-preview">
-            <img src="badges/ffp-simple-green.svg" alt="FFP v1.0">
-        </div>
-        <div class="code-block">[![FFP v1.0](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/ffp-simple-green.svg)](https://github.com/druvx13/FFP)</div>
-        <button class="copy-button" onclick="copyBadge('[![FFP v1.0](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/ffp-simple-green.svg)](https://github.com/druvx13/FFP)', this)">Copy Markdown</button>
+      <h3>Simple Badge</h3>
+      <div class="badge-preview">
+        <img src="badges/ffp-simple-green.svg" alt="FFP v1.0 — simple green badge">
+      </div>
+      <div class="code-block">[![FFP v1.0](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/ffp-simple-green.svg)](https://github.com/druvx13/FFP)</div>
+      <button class="copy-button" type="button"
+        data-copy="[![FFP v1.0](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/ffp-simple-green.svg)](https://github.com/druvx13/FFP)">
+        Copy Markdown
+      </button>
     </div>
 
     <div class="badge-section">
-        <h3>Flat Style Badge</h3>
-        <div class="badge-preview">
-            <img src="badges/license-ffp-flat.svg" alt="FFP License">
-        </div>
-        <div class="code-block">[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-flat.svg)](https://github.com/druvx13/FFP)</div>
-        <button class="copy-button" onclick="copyBadge('[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-flat.svg)](https://github.com/druvx13/FFP)', this)">Copy Markdown</button>
+      <h3>Flat Style Badge</h3>
+      <div class="badge-preview">
+        <img src="badges/license-ffp-flat.svg" alt="FFP License — flat style badge">
+      </div>
+      <div class="code-block">[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-flat.svg)](https://github.com/druvx13/FFP)</div>
+      <button class="copy-button" type="button"
+        data-copy="[![FFP License](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/license-ffp-flat.svg)](https://github.com/druvx13/FFP)">
+        Copy Markdown
+      </button>
     </div>
 
     <h2>HTML Usage</h2>
-    <p>For HTML websites, use this code:</p>
-    <div class="code-block">&lt;a href="https://github.com/druvx13/FFP"&gt;
-  &lt;img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg" alt="FFP License"&gt;
+    <p>For HTML websites, use this snippet:</p>
+    <div class="code-block">&lt;a href="https://github.com/druvx13/FFP" target="_blank" rel="noopener noreferrer"&gt;
+  &lt;img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg"
+       alt="FFP License"&gt;
 &lt;/a&gt;</div>
-    <button class="copy-button" onclick="copyBadge('<a href=\'https://github.com/druvx13/FFP\'>\n  <img src=\'https://img.shields.io/badge/license-FFP%20v1.0-blue.svg\' alt=\'FFP License\'>\n</a>', this)">Copy HTML</button>
+    <button class="copy-button" type="button"
+      data-copy='<a href="https://github.com/druvx13/FFP" target="_blank" rel="noopener noreferrer">&#10;  <img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg" alt="FFP License">&#10;</a>'>
+      Copy HTML
+    </button>
 
     <h2>Badge Best Practices</h2>
     <ul>
-        <li>Always link badges to the FFP license page</li>
-        <li>Include descriptive alt text for accessibility</li>
-        <li>Place in a visible location (README top, footer, etc.)</li>
-        <li>Use consistent badge style across your project</li>
+      <li>Always link badges back to the FFP license page or GitHub repository</li>
+      <li>Include descriptive <code>alt</code> text for accessibility</li>
+      <li>Place the badge in a visible location (README top section, footer, etc.)</li>
+      <li>Use a consistent badge style across your project</li>
+      <li>Add <code>rel="noopener noreferrer"</code> when the link opens in a new tab</li>
     </ul>
 
-    <footer>
-        <p>&copy; FFP License Project. Released under the FFP (Freedom For People) License.</p>
-        <p><a href="index.html">Back to License</a> | <a href="https://github.com/druvx13/FFP">GitHub</a></p>
+    <footer class="site-footer">
+      <p>&copy; FFP License Project. Released under the FFP (Freedom For People) License.</p>
+      <p><a href="index.html">License Text</a> &nbsp;|&nbsp; <a href="https://github.com/druvx13/FFP" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     </footer>
-</div>
+  </div>
+</main>
 
-<script>
-function copyBadge(text, button) {
-    navigator.clipboard.writeText(text).then(() => {
-        const originalText = button.innerText;
-        button.innerText = "Copied!";
-        button.classList.add('copied');
-        
-        setTimeout(() => {
-            button.innerText = originalText;
-            button.classList.remove('copied');
-        }, 2000);
-    }).catch(err => {
-        console.error('Failed to copy: ', err);
-        button.innerText = "Failed to Copy";
-        setTimeout(() => {
-            button.innerText = "Copy Markdown";
-        }, 2000);
-    });
-}
-</script>
-
+<script src="js/main.js" defer></script>
 </body>
 </html>

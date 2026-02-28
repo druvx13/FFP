@@ -79,13 +79,28 @@ Documentation improvements are always welcome:
 
 ### Enhancing the Website
 
-Contributions to the website (/docs folder):
+Contributions to the website (`docs/` folder):
 
-- **Improve styling and design**
-- **Fix responsive design issues**
-- **Add accessibility improvements**
-- **Improve navigation**
-- **Add useful features** (search, better copy functionality, etc.)
+- **Improve styling and design** — edit `docs/css/styles.css`
+- **Fix responsive design issues** — breakpoints and mobile layout live in `docs/css/styles.css`
+- **Add accessibility improvements** — aria attributes, semantic HTML in the `.html` files
+- **Improve navigation** — shared nav in each page's `<nav class="site-nav">` block
+- **Add useful features** — shared behaviour lives in `docs/js/main.js`
+
+#### Website Directory Layout
+
+```
+docs/
+├── index.html       ← License text page
+├── faq.html         ← FAQ page
+├── comparison.html  ← Comparison page
+├── badges.html      ← Badge gallery page
+├── css/
+│   └── styles.css   ← Shared stylesheet (single source of truth for all styling)
+├── js/
+│   └── main.js      ← Shared JavaScript (nav toggle, clipboard helpers)
+└── badges/          ← SVG badge files
+```
 
 ### Adding Examples and Resources
 
@@ -131,11 +146,12 @@ For documentation:
 - Verify formatting renders properly
 
 #### Website Changes
-- Open `/docs/index.html` in a web browser
+- Open `docs/index.html` in a web browser (no build step required — it's plain HTML/CSS/JS)
 - Test on different browsers (Chrome, Firefox, Safari, Edge)
-- Test responsive design on different screen sizes
-- Verify all navigation links work
-- Test copy functionality
+- Test responsive design on different screen sizes (especially ≤ 680 px for the mobile nav)
+- Enable your browser's "prefer dark color scheme" emulation to verify dark-mode rendering
+- Verify all navigation links work across all four pages
+- Test clipboard copy functionality on `index.html` and `badges.html`
 - Check for console errors
 
 ## Contribution Guidelines

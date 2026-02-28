@@ -1,343 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>License Comparison - FFP License</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            background: #fff;
-            padding: 15px 0;
-            border-bottom: 1px solid #e0e0e0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        nav a {
-            color: #2c3e50;
-            text-decoration: none;
-            padding: 8px 15px;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-
-        nav a:hover, nav a.active {
-            background-color: #3498db;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 40px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-radius: 8px;
-        }
-
-        h1 {
-            color: #2c3e50;
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 20px;
-        }
-
-        h2 {
-            color: #2c3e50;
-            font-size: 1.5rem;
-            margin-top: 40px;
-        }
-
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            overflow-x: auto;
-            display: block;
-        }
-
-        .comparison-table table {
-            width: 100%;
-            min-width: 600px;
-        }
-
-        .comparison-table th, .comparison-table td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #e0e0e0;
-        }
-
-        .comparison-table th {
-            background-color: #2c3e50;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        .comparison-table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        .yes {
-            color: #27ae60;
-            font-weight: bold;
-        }
-
-        .no {
-            color: #e74c3c;
-            font-weight: bold;
-        }
-
-        .warning {
-            color: #f39c12;
-            font-weight: bold;
-        }
-
-        .section-header {
-            background-color: #3498db !important;
-            color: #fff !important;
-            font-weight: bold;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            font-size: 0.85rem;
-            color: #777;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                margin: 0;
-                border-radius: 0;
-                padding: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How the FFP (Freedom For People) License compares to MIT, Apache 2.0, GPL v3, and BSD 3-Clause.">
+  <meta property="og:title" content="License Comparison — FFP License">
+  <meta property="og:description" content="How FFP compares to MIT, Apache 2.0, GPL v3, and BSD 3-Clause.">
+  <meta property="og:type" content="website">
+  <title>License Comparison — FFP (Freedom For People) License</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Wider container for comparison table */
+    .container { max-width: 1100px; }
+  </style>
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">License Text</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="comparison.html" class="active">Comparison</a></li>
-        <li><a href="badges.html">Badges</a></li>
-        <li><a href="https://github.com/druvx13/FFP" target="_blank">GitHub</a></li>
+<nav class="site-nav" aria-label="Site navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">FFP License</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <line x1="3" y1="6"  x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html">License</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="comparison.html" class="active" aria-current="page">Comparison</a></li>
+      <li><a href="badges.html">Badges</a></li>
+      <li><a href="https://github.com/druvx13/FFP" target="_blank" rel="noopener noreferrer">GitHub</a></li>
     </ul>
+  </div>
 </nav>
 
-<div class="container">
-    <h1>FFP License Comparison</h1>
-    <p>Compare the FFP (Freedom For People) License with other popular open-source licenses.</p>
+<main>
+  <div class="container">
+    <header class="page-header">
+      <h1>License Comparison</h1>
+    </header>
 
     <h2>Quick Comparison Table</h2>
-    <div class="comparison-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>Feature</th>
-                    <th>FFP v1.0</th>
-                    <th>MIT</th>
-                    <th>Apache 2.0</th>
-                    <th>GPL v3</th>
-                    <th>BSD 3-Clause</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="section-header">
-                    <td colspan="6"><strong>PERMISSIONS</strong></td>
-                </tr>
-                <tr>
-                    <td>Commercial Use</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                </tr>
-                <tr>
-                    <td>Modification</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                </tr>
-                <tr>
-                    <td>Distribution</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                </tr>
-                <tr>
-                    <td>Private Use</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                </tr>
-                <tr>
-                    <td>Patent Grant</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="no">❌ No</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="no">❌ No</td>
-                </tr>
-                <tr class="section-header">
-                    <td colspan="6"><strong>CONDITIONS</strong></td>
-                </tr>
-                <tr>
-                    <td>Include License</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                </tr>
-                <tr>
-                    <td>Include Copyright</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                </tr>
-                <tr>
-                    <td>State Changes</td>
-                    <td class="no">❌ No</td>
-                    <td class="no">❌ No</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="no">❌ No</td>
-                </tr>
-                <tr>
-                    <td>Disclose Source</td>
-                    <td class="no">❌ No</td>
-                    <td class="no">❌ No</td>
-                    <td class="no">❌ No</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="no">❌ No</td>
-                </tr>
-                <tr>
-                    <td>Same License (Copyleft)</td>
-                    <td class="no">❌ No</td>
-                    <td class="no">❌ No</td>
-                    <td class="no">❌ No</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="no">❌ No</td>
-                </tr>
-                <tr class="section-header">
-                    <td colspan="6"><strong>LIMITATIONS</strong></td>
-                </tr>
-                <tr>
-                    <td>Liability</td>
-                    <td class="no">❌ No Liability</td>
-                    <td class="no">❌ No Liability</td>
-                    <td class="no">❌ No Liability</td>
-                    <td class="no">❌ No Liability</td>
-                    <td class="no">❌ No Liability</td>
-                </tr>
-                <tr>
-                    <td>Warranty</td>
-                    <td class="no">❌ No Warranty</td>
-                    <td class="no">❌ No Warranty</td>
-                    <td class="no">❌ No Warranty</td>
-                    <td class="no">❌ No Warranty</td>
-                    <td class="no">❌ No Warranty</td>
-                </tr>
-                <tr>
-                    <td>Trademark</td>
-                    <td class="no">❌ Not Granted</td>
-                    <td class="no">❌ Not Granted</td>
-                    <td class="no">❌ Not Granted</td>
-                    <td class="no">❌ Not Granted</td>
-                    <td class="no">❌ Not Granted</td>
-                </tr>
-                <tr>
-                    <td>Patent Retaliation</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="no">❌ No</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="yes">✅ Yes</td>
-                    <td class="no">❌ No</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="table-wrapper">
+      <table class="comparison-table" aria-label="License feature comparison">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>FFP v1.0</th>
+            <th>MIT</th>
+            <th>Apache 2.0</th>
+            <th>GPL v3</th>
+            <th>BSD 3-Clause</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="6"><strong>Permissions</strong></td></tr>
+          <tr><td>Commercial Use</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td></tr>
+          <tr><td>Modification</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td></tr>
+          <tr><td>Distribution</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td></tr>
+          <tr><td>Private Use</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td></tr>
+          <tr><td>Patent Grant</td><td>&#x2705;</td><td>&#x274C;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x274C;</td></tr>
+          <tr><td colspan="6"><strong>Conditions</strong></td></tr>
+          <tr><td>Include License</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td></tr>
+          <tr><td>Include Copyright</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x2705;</td></tr>
+          <tr><td>State Changes</td><td>&#x274C;</td><td>&#x274C;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x274C;</td></tr>
+          <tr><td>Disclose Source</td><td>&#x274C;</td><td>&#x274C;</td><td>&#x274C;</td><td>&#x2705;</td><td>&#x274C;</td></tr>
+          <tr><td>Same License (Copyleft)</td><td>&#x274C;</td><td>&#x274C;</td><td>&#x274C;</td><td>&#x2705;</td><td>&#x274C;</td></tr>
+          <tr><td colspan="6"><strong>Limitations</strong></td></tr>
+          <tr><td>Liability</td><td>&#x274C; None</td><td>&#x274C; None</td><td>&#x274C; None</td><td>&#x274C; None</td><td>&#x274C; None</td></tr>
+          <tr><td>Warranty</td><td>&#x274C; None</td><td>&#x274C; None</td><td>&#x274C; None</td><td>&#x274C; None</td><td>&#x274C; None</td></tr>
+          <tr><td>Trademark Use</td><td>&#x274C; Not granted</td><td>&#x274C; Not granted</td><td>&#x274C; Not granted</td><td>&#x274C; Not granted</td><td>&#x274C; Not granted</td></tr>
+          <tr><td>Patent Retaliation</td><td>&#x2705;</td><td>&#x274C;</td><td>&#x2705;</td><td>&#x2705;</td><td>&#x274C;</td></tr>
+        </tbody>
+      </table>
     </div>
 
-    <h2>Key Distinguishing Features of FFP</h2>
+    <h2>Detailed Comparisons</h2>
 
-    <h3>1. Patent Protection with Retaliation</h3>
-    <p>FFP provides explicit patent grants while including retaliation provisions that terminate patent rights for aggressors. This is similar to Apache 2.0 but more comprehensive.</p>
-
-    <h3>2. No Lockdown Provision</h3>
-    <p>FFP explicitly prohibits imposing measures that prevent recipients from exercising their rights. This is unique among permissive licenses.</p>
-
-    <h3>3. Cure Provisions</h3>
-    <p>FFP allows reinstatement of rights if violations are cured, with a 60-day grace period. This is more generous than many licenses.</p>
-
-    <h3>4. Broad Scope</h3>
-    <p>FFP explicitly covers software, documentation, art, media, data, and hardware designs, making it versatile for various types of works.</p>
-
-    <h2>When to Choose FFP</h2>
+    <h3>FFP vs MIT License</h3>
+    <p><strong>Similarities:</strong></p>
     <ul>
-        <li>✅ You want permissive licensing with patent protection</li>
-        <li>✅ You need patent retaliation against trolls</li>
-        <li>✅ You want to prohibit lockdown measures explicitly</li>
-        <li>✅ You need broad coverage (software, docs, art, data, hardware)</li>
-        <li>✅ You prefer clear definitions and terms</li>
-        <li>✅ You want cure provisions for violations</li>
+      <li>Both are permissive licenses</li>
+      <li>Both allow commercial use</li>
+      <li>Both require license and copyright notice preservation</li>
+      <li>Both disclaim warranties and liability</li>
+      <li>Neither requires source code disclosure</li>
+    </ul>
+    <p><strong>Differences:</strong></p>
+    <ul>
+      <li><strong>Patent Grant:</strong> FFP includes an explicit patent grant; MIT does not</li>
+      <li><strong>Patent Retaliation:</strong> FFP terminates patent rights for patent litigation; MIT has no patent provisions</li>
+      <li><strong>License Length:</strong> FFP is more detailed with explicit definitions and terms</li>
+      <li><strong>Attribution:</strong> FFP explicitly requires preservation of all attribution notices</li>
+      <li><strong>No Lockdown:</strong> FFP explicitly prohibits measures that restrict recipients&#39; rights</li>
+    </ul>
+    <p><strong>When to choose FFP over MIT:</strong> When patent protection is important to you or your project.</p>
+    <p><strong>When to choose MIT over FFP:</strong> When you want maximum simplicity and the most widely recognized permissive license.</p>
+
+    <h3>FFP vs Apache License 2.0</h3>
+    <p><strong>Similarities:</strong></p>
+    <ul>
+      <li>Both are permissive licenses with explicit patent grants</li>
+      <li>Both include patent retaliation clauses</li>
+      <li>Both allow commercial use and modification</li>
+      <li>Both require license and copyright notice preservation</li>
+      <li>Both disclaim warranties and liability</li>
+    </ul>
+    <p><strong>Differences:</strong></p>
+    <ul>
+      <li><strong>State Changes:</strong> Apache 2.0 requires documenting changes; FFP does not</li>
+      <li><strong>NOTICE File:</strong> Apache 2.0 has specific NOTICE file requirements; FFP does not</li>
+      <li><strong>Reinstatement:</strong> FFP has a more flexible cure provision for violations</li>
+    </ul>
+    <p><strong>When to choose FFP over Apache 2.0:</strong> When you want simpler compliance requirements.</p>
+    <p><strong>When to choose Apache 2.0 over FFP:</strong> When you want a widely-recognized, legally vetted license with stronger trademark protections.</p>
+
+    <h3>FFP vs GPL v3</h3>
+    <p><strong>Similarities:</strong></p>
+    <ul>
+      <li>Both include patent grants and retaliation provisions</li>
+      <li>Both allow commercial use and modification</li>
+      <li>Both disclaim warranties and liability</li>
+    </ul>
+    <p><strong>Major Differences:</strong></p>
+    <ul>
+      <li><strong>Copyleft:</strong> GPL v3 is copyleft (derivative works must be GPL); FFP is permissive</li>
+      <li><strong>Source Disclosure:</strong> GPL v3 requires source code disclosure; FFP does not</li>
+      <li><strong>Same License:</strong> GPL v3 requires derivatives to be GPL-licensed; FFP allows relicensing</li>
+      <li><strong>Complexity:</strong> GPL v3 is much longer and more complex</li>
+    </ul>
+    <p><strong>When to choose FFP over GPL v3:</strong> When you want to allow proprietary derivatives or minimize compliance burden.</p>
+    <p><strong>When to choose GPL v3 over FFP:</strong> When you want to ensure all derivatives remain open source.</p>
+
+    <h3>FFP vs BSD 3-Clause</h3>
+    <p><strong>Similarities:</strong></p>
+    <ul>
+      <li>Both are permissive licenses</li>
+      <li>Both allow commercial use and modification</li>
+      <li>Both require copyright and license preservation</li>
+    </ul>
+    <p><strong>Differences:</strong></p>
+    <ul>
+      <li><strong>Patent Grant:</strong> FFP includes an explicit patent grant; BSD 3-Clause does not</li>
+      <li><strong>Patent Retaliation:</strong> FFP has patent retaliation; BSD 3-Clause does not</li>
+      <li><strong>Endorsement:</strong> BSD 3-Clause has an explicit non-endorsement clause; FFP has it too (Section 7)</li>
+      <li><strong>No Lockdown:</strong> FFP explicitly prohibits locking down recipients&#39; rights; BSD 3-Clause does not</li>
+    </ul>
+    <p><strong>When to choose FFP over BSD 3-Clause:</strong> When patent protection matters.</p>
+    <p><strong>When to choose BSD 3-Clause over FFP:</strong> When you want maximum brevity and recognition.</p>
+
+    <h2>Summary: Is FFP Right for Your Project?</h2>
+    <p>Choose the <strong>FFP License</strong> if you want a permissive license that:</p>
+    <ul>
+      <li>Allows maximum freedom for users and contributors</li>
+      <li>Includes explicit patent protection</li>
+      <li>Has a minimal compliance burden</li>
+      <li>Protects against patent litigation abuse</li>
+      <li>Is clear and readable</li>
     </ul>
 
-    <h2>License Compatibility</h2>
-    <p><strong>FFP works well with:</strong></p>
-    <ul>
-        <li class="yes">✅ MIT License</li>
-        <li class="yes">✅ BSD Licenses (2-Clause and 3-Clause)</li>
-        <li class="yes">✅ Apache License 2.0</li>
-        <li class="warning">⚠️ MPL 2.0 (with care)</li>
-    </ul>
-
-    <p><strong>Potential issues with:</strong></p>
-    <ul>
-        <li class="warning">⚠️ GPL v2/v3 (incompatible due to different philosophies)</li>
-        <li class="warning">⚠️ LGPL (similar issues)</li>
-        <li class="warning">⚠️ AGPL (incompatible)</li>
-    </ul>
-
-    <footer>
-        <p>&copy; FFP License Project. Released under the FFP (Freedom For People) License.</p>
-        <p><a href="index.html">Back to License</a> | <a href="https://github.com/druvx13/FFP">GitHub</a></p>
+    <footer class="site-footer">
+      <p>&copy; FFP License Project. Released under the FFP (Freedom For People) License.</p>
+      <p><a href="index.html">License Text</a> &nbsp;|&nbsp; <a href="https://github.com/druvx13/FFP" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     </footer>
-</div>
+  </div>
+</main>
 
+<script src="js/main.js" defer></script>
 </body>
 </html>
