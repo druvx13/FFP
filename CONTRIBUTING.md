@@ -180,9 +180,11 @@ For documentation:
 ### Special Considerations for License Text
 
 ⚠️ **Important**: The license legal text in the LICENSE file and the terms section of the website should only be modified:
-- With legal review and approval
+- With legal review and approval by a qualified legal professional
 - For critical bug fixes that affect legal interpretation
-- For official version updates
+- For official version updates (e.g., v2.0 → v3.0)
+
+The current authoritative version is **FFP License v2.0**. Any proposed changes to the legal text must be discussed in a GitHub Issue before a pull request is opened.
 
 For the license text:
 - Translation or formatting changes must preserve legal meaning
@@ -278,9 +280,20 @@ If you have questions about contributing:
 
 ## License
 
-By contributing to the FFP License project, you agree that your contributions will be licensed under the FFP (Freedom For People) License, Version 1.0.
+By contributing to the FFP License project, you agree that your contributions will be licensed under the FFP (Freedom For People) License, Version 2.0 (or any later version published by the FFP License Project).
 
 For documentation and non-legal content, you also agree that your contributions may be relicensed as needed for compatibility or legal reasons.
+
+### Contributor License Agreement (CLA)
+
+By submitting any Contribution to this repository, you represent and warrant that:
+
+1. **You have the right** to grant the license described in Section 5 of the FFP License v2.0.
+2. **Your Contribution is original** or you have obtained sufficient rights to submit it under these terms.
+3. **You understand** that your Contribution may be made publicly available and incorporated into the Work.
+4. **You accept** that your Contribution is licensed inbound on the same terms as the Work (FFP License v2.0, inbound = outbound).
+
+No separate CLA document is required; your act of submitting a pull request constitutes agreement to the above.
 
 ---
 

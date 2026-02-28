@@ -189,17 +189,37 @@ Only if the project maintainer explicitly agrees in writing. Otherwise, contribu
 
 ## Versioning Questions
 
+### What changed in v2.0?
+
+FFP License v2.0 introduced the following improvements over v1.0:
+
+- **Stronger definitions**: Added `Legal Entity`, `Source Form`, `Object Form`, and
+  `Effective Date` for greater precision.
+- **AI/ML Clause** (Section 4.5): Explicit permission to use the Work as training data.
+- **Indemnification** (Section 11): Contributors are protected by an indemnification clause.
+- **Export Controls** (Section 12): Users are informed of export compliance obligations.
+- **Entire Agreement** (Section 15): Prevents parol-evidence disputes.
+- **Version Upgrade Path** (Section 16): "v2.0 or later" is now formally supported.
+- **Governing Law** (Section 17): International default with arbitration preference.
+- **Stronger liability caps**: Jurisdictional carve-outs for warranty and liability disclaimers.
+- **Patent clause broadened**: Now covers patent litigation threats, not just filed suits.
+
+> ⚠️ **Disclaimer**: FFP License v2.0 was developed with AI assistance for informational
+> purposes. It does not constitute legal advice. Consult a qualified attorney.
+
 ### What version of FFP should I use?
 
-Currently, only **Version 1.0** of the FFP License exists. Use this version for new projects.
+Currently, only **Version 2.0** of the FFP License is the current stable release. Use this version for new projects. Version 1.0 is superseded.
 
 ### Can I upgrade to a newer version later?
 
 Yes, as the original licensor, you can:
 - Re-license your work under a newer FFP version
-- Specify "FFP v1.0 or later" to allow users to choose
+- Specify "FFP v2.0 or later" to allow users to choose (this is now explicitly supported by
+  Section 16 of the FFP License v2.0)
 
-However, you cannot upgrade others' contributions without their permission.
+However, you cannot unilaterally upgrade others' contributions without their permission.
+Contributors who submitted under v2.0 have granted rights under v2.0 terms.
 
 ## Special Use Cases
 

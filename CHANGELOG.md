@@ -38,6 +38,70 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [2.0.0] — 2026-02-28
+
+> ⚠️ **Disclaimer**: FFP License v2.0 was developed with AI assistance for informational and
+> drafting purposes only. It does not constitute legal advice. A qualified legal professional
+> should review the license before deployment in commercial or high-stakes contexts.
+
+### Phase 1 — License Audit Findings (v1.0)
+
+The following issues were identified in v1.0 and addressed in v2.0:
+
+- **Missing `Source Form` / `Object Form` definitions** — ambiguity in what forms of the Work
+  distribution conditions apply to (fixed: new definitions in Section 0).
+- **`Legal Entity` definition absent** — "control" scenarios were undefined for organisations
+  (fixed: explicit `Legal Entity` definition added to Section 0).
+- **`Contributor` definition was circular** — referenced "submitted or distributed under this
+  License" without sufficient clarity (fixed: tightened definition in Section 0).
+- **`Effective Date` absent** — no anchor for when rights begin (fixed: defined in Section 0).
+- **Patent Retaliation clause too narrow** — only covered litigation "filed"; threats were
+  excluded (fixed: Section 3.2 now covers initiation, maintenance, *or* threats).
+- **No `Lockdown` clause lacked DRM/TPM specificity** — "technological measures" was vague
+  (fixed: Section 4.3 explicitly names DRM and TPM with carve-outs for encryption).
+- **No AI/ML Training provision** — modern use case unaddressed (fixed: Section 4.5 added).
+- **Reinstatement window undefined** — "cease all violation" had no cure deadline
+  (fixed: Section 8.2 now specifies 30-day cure window).
+- **No Indemnification clause** — only warranty/liability disclaimers; no positive indemnity
+  obligation (fixed: Section 11 added).
+- **No Export Controls notice** — users unaware of export obligations (fixed: Section 12 added).
+- **No Entire Agreement clause** — risk of parol evidence disputes (fixed: Section 15 added).
+- **No version upgrade path** — users unable to adopt later versions without re-licensing
+  (fixed: Section 16 added with "v2.0 or later" mechanism).
+- **No Governing Law provision** — dispute resolution forum undefined (fixed: Section 17 added
+  with international default and arbitration preference).
+- **Liability disclaimer lacked jurisdictional carve-outs** — may not be enforceable in all
+  jurisdictions as written (fixed: Sections 9 and 10 now include minimum-warranty and
+  minimum-liability carve-outs).
+- **Contributor Warranty absent** — contributors made no representation about their rights
+  (fixed: Section 5 now includes contributor representation and warranty).
+
+### Added in v2.0
+
+- `Legal Entity`, `Source Form`, `Object Form`, `Effective Date` definitions (Section 0).
+- AI / Machine Learning training permission with output scoping (Section 4.5).
+- Explicit contributor representation and warranty in Contributions clause (Section 5).
+- Indemnification clause protecting Licensor and Contributors (Section 11).
+- Export Controls notice (Section 12).
+- Entire Agreement clause (Section 15).
+- Later Versions clause with "v2.0 or later" support (Section 16).
+- Governing Law and Dispute Resolution provision (Section 17).
+- AI Disclaimer in Preamble.
+
+### Changed in v2.0
+
+- Section 3.2 (Patent Retaliation) expanded to cover litigation threats, not just filed suits.
+- Section 4.1 (License Text Requirement) split into sub-clauses (a) and (b), adds URI fallback.
+- Section 4.3 (No Lockdown) names DRM/TPM explicitly and adds three carve-outs.
+- Section 5 (Contributions) adds contributor representation and warranty.
+- Section 8.2 (Reinstatement) adds explicit 30-day cure window.
+- Section 9 (Warranty Disclaimer) adds jurisdictional minimum-warranty carve-out.
+- Section 10 (Liability Limitation) adds loss-of-profits/data/goodwill coverage and
+  jurisdictional minimum-liability carve-out.
+- Application Guide updated to reference v2.0 and include AI disclaimer.
+
+---
+
 ## [1.0.0] — Initial Release
 
 ### Added

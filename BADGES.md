@@ -5,23 +5,23 @@ Display the FFP License badge on your project to show that it's licensed under t
 ## Available Badges
 
 ### Standard Blue Badge
-![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg)
+![FFP License](https://img.shields.io/badge/license-FFP%20v2.0-blue.svg)
 
 **Markdown:**
 ```markdown
-[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg)](https://github.com/druvx13/FFP)
+[![FFP License](https://img.shields.io/badge/license-FFP%20v2.0-blue.svg)](https://github.com/druvx13/FFP)
 ```
 
 **HTML:**
 ```html
 <a href="https://github.com/druvx13/FFP">
-  <img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg" alt="FFP License">
+  <img src="https://img.shields.io/badge/license-FFP%20v2.0-blue.svg" alt="FFP License">
 </a>
 ```
 
 **reStructuredText:**
 ```rst
-.. image:: https://img.shields.io/badge/license-FFP%20v1.0-blue.svg
+.. image:: https://img.shields.io/badge/license-FFP%20v2.0-blue.svg
    :target: https://github.com/druvx13/FFP
    :alt: FFP License
 ```
@@ -29,21 +29,21 @@ Display the FFP License badge on your project to show that it's licensed under t
 ---
 
 ### Green Badge
-![FFP License Green](https://img.shields.io/badge/license-FFP%20v1.0-brightgreen.svg)
+![FFP License Green](https://img.shields.io/badge/license-FFP%20v2.0-brightgreen.svg)
 
 **Markdown:**
 ```markdown
-[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-brightgreen.svg)](https://github.com/druvx13/FFP)
+[![FFP License](https://img.shields.io/badge/license-FFP%20v2.0-brightgreen.svg)](https://github.com/druvx13/FFP)
 ```
 
 ---
 
 ### Orange Badge
-![FFP License Orange](https://img.shields.io/badge/license-FFP%20v1.0-orange.svg)
+![FFP License Orange](https://img.shields.io/badge/license-FFP%20v2.0-orange.svg)
 
 **Markdown:**
 ```markdown
-[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-orange.svg)](https://github.com/druvx13/FFP)
+[![FFP License](https://img.shields.io/badge/license-FFP%20v2.0-orange.svg)](https://github.com/druvx13/FFP)
 ```
 
 ---
@@ -79,7 +79,7 @@ You can also use the SVG badges hosted in this repository:
 
 ### Simple Badge (Local)
 ```markdown
-[![FFP v1.0](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/ffp-simple-green.svg)](https://github.com/druvx13/FFP)
+[![FFP v2.0](https://raw.githubusercontent.com/druvx13/FFP/main/docs/badges/ffp-simple-green.svg)](https://github.com/druvx13/FFP)
 ```
 
 ---
@@ -101,7 +101,7 @@ You can create custom FFP badges using [shields.io](https://shields.io/):
 
 ### Custom Colors
 ```markdown
-![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-YOUR_COLOR.svg)
+![FFP License](https://img.shields.io/badge/license-FFP%20v2.0-YOUR_COLOR.svg)
 ```
 
 Replace `YOUR_COLOR` with any valid color:
@@ -111,17 +111,17 @@ Replace `YOUR_COLOR` with any valid color:
 
 ### Custom Text
 ```markdown
-![License](https://img.shields.io/badge/License-FFP%20(Freedom%20For%20People)%20v1.0-blue.svg)
+![License](https://img.shields.io/badge/License-FFP%20(Freedom%20For%20People)%20v2.0-blue.svg)
 ```
 
 ### With Logo
 ```markdown
-![License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?logo=github)
+![License](https://img.shields.io/badge/license-FFP%20v2.0-blue.svg?logo=github)
 ```
 
 ### Different Styles
 ```markdown
-![License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg?style=flat-square)
+![License](https://img.shields.io/badge/license-FFP%20v2.0-blue.svg?style=flat-square)
 ```
 
 Available styles:
@@ -139,7 +139,7 @@ Place badges near the top of your README, typically after the title:
 ```markdown
 # My Project
 
-[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg)](https://github.com/druvx13/FFP)
+[![FFP License](https://img.shields.io/badge/license-FFP%20v2.0-blue.svg)](https://github.com/druvx13/FFP)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
 
 Description of your project...
@@ -150,7 +150,7 @@ Include the badge in your documentation header or footer:
 
 ```markdown
 ---
-**License**: [![FFP v1.0](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg)](https://github.com/druvx13/FFP)
+**License**: [![FFP v2.0](https://img.shields.io/badge/license-FFP%20v2.0-blue.svg)](https://github.com/druvx13/FFP)
 ---
 ```
 
@@ -161,7 +161,7 @@ For HTML websites:
 <footer>
   <p>Licensed under 
     <a href="https://github.com/druvx13/FFP">
-      <img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg" alt="FFP License" style="vertical-align: middle;">
+      <img src="https://img.shields.io/badge/license-FFP%20v2.0-blue.svg" alt="FFP License" style="vertical-align: middle;">
     </a>
   </p>
 </footer>
@@ -181,10 +181,10 @@ If you want to create a custom FFP badge:
 Visit: `https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>.svg`
 
 - **LABEL**: "license" or "License"
-- **MESSAGE**: "FFP v1.0" (URL-encoded: `FFP%20v1.0`)
+- **MESSAGE**: "FFP v2.0" (URL-encoded: `FFP%20v2.0`)
 - **COLOR**: Your choice (blue, green, etc.)
 
-Result: `https://img.shields.io/badge/license-FFP%20v1.0-blue.svg`
+Result: `https://img.shields.io/badge/license-FFP%20v2.0-blue.svg`
 
 ## Badge Best Practices
 
@@ -199,7 +199,7 @@ Result: `https://img.shields.io/badge/license-FFP%20v1.0-blue.svg`
 
 ### Multiple Badges in a Row
 ```markdown
-[![FFP License](https://img.shields.io/badge/license-FFP%20v1.0-blue.svg)](https://github.com/druvx13/FFP)
+[![FFP License](https://img.shields.io/badge/license-FFP%20v2.0-blue.svg)](https://github.com/druvx13/FFP)
 [![Version](https://img.shields.io/badge/version-1.0.0-green.svg)]()
 [![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)]()
 ```
@@ -215,7 +215,7 @@ Result: `https://img.shields.io/badge/license-FFP%20v1.0-blue.svg`
 ```html
 <p align="center">
   <a href="https://github.com/druvx13/FFP">
-    <img src="https://img.shields.io/badge/license-FFP%20v1.0-blue.svg" alt="FFP License">
+    <img src="https://img.shields.io/badge/license-FFP%20v2.0-blue.svg" alt="FFP License">
   </a>
 </p>
 ```
