@@ -1,288 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - FFP (Freedom For People) License</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            background: #fff;
-            padding: 15px 0;
-            border-bottom: 1px solid #e0e0e0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        nav a {
-            color: #2c3e50;
-            text-decoration: none;
-            padding: 8px 15px;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-
-        nav a:hover, nav a.active {
-            background-color: #3498db;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 40px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            border-radius: 8px;
-        }
-
-        h1 {
-            color: #2c3e50;
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 20px;
-        }
-
-        h2 {
-            color: #2c3e50;
-            font-size: 1.5rem;
-            margin-top: 40px;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            color: #444;
-            font-size: 1.2rem;
-            margin-top: 25px;
-        }
-
-        .faq-item {
-            margin-bottom: 30px;
-        }
-
-        .question {
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-
-        .answer {
-            margin-left: 20px;
-            color: #555;
-        }
-
-        .answer ul, .answer ol {
-            margin-left: 20px;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            font-size: 0.85rem;
-            color: #777;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                margin: 0;
-                border-radius: 0;
-                padding: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequently Asked Questions about the FFP (Freedom For People) License.">
+  <meta property="og:title" content="FAQ — FFP License">
+  <meta property="og:description" content="Frequently Asked Questions about the FFP (Freedom For People) License.">
+  <meta property="og:type" content="website">
+  <title>FAQ — FFP (Freedom For People) License</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<nav>
-    <ul>
-        <li><a href="index.html">License Text</a></li>
-        <li><a href="faq.html" class="active">FAQ</a></li>
-        <li><a href="comparison.html">Comparison</a></li>
-        <li><a href="badges.html">Badges</a></li>
-        <li><a href="https://github.com/druvx13/FFP" target="_blank">GitHub</a></li>
+<nav class="site-nav" aria-label="Site navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">FFP License</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <line x1="3" y1="6"  x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html">License</a></li>
+      <li><a href="faq.html" class="active" aria-current="page">FAQ</a></li>
+      <li><a href="comparison.html">Comparison</a></li>
+      <li><a href="badges.html">Badges</a></li>
+      <li><a href="https://github.com/druvx13/FFP" target="_blank" rel="noopener noreferrer">GitHub</a></li>
     </ul>
+  </div>
 </nav>
 
-<div class="container">
-    <h1>Frequently Asked Questions</h1>
+<main>
+  <div class="container">
+    <header class="page-header">
+      <h1>Frequently Asked Questions</h1>
+    </header>
 
     <h2>General Questions</h2>
 
     <div class="faq-item">
-        <div class="question">What is the FFP License?</div>
-        <div class="answer">
-            The <strong>FFP (Freedom For People) License</strong> is a free and permissive open-source license designed to maximize human freedom by ensuring that software, documentation, art, media, data, and other copyrightable works remain available for anyone to use, study, modify, and share.
-        </div>
+      <div class="faq-question">What is the FFP License?</div>
+      <div class="faq-answer">
+        The <strong>FFP (Freedom For People) License</strong> is a free and permissive open-source license designed to maximize human freedom by ensuring that software, documentation, art, media, data, and other copyrightable works remain available for anyone to use, study, modify, and share.
+      </div>
     </div>
 
     <div class="faq-item">
-        <div class="question">Why was the FFP License created?</div>
-        <div class="answer">
-            The FFP License was created to provide a balanced approach to open licensing that:
-            <ul>
-                <li>Grants broad permissions for use, modification, and distribution</li>
-                <li>Includes patent protection provisions</li>
-                <li>Requires attribution and license preservation</li>
-                <li>Protects against patent litigation abuse</li>
-                <li>Maintains simplicity and clarity</li>
-            </ul>
-        </div>
+      <div class="faq-question">Why was the FFP License created?</div>
+      <div class="faq-answer">
+        The FFP License was created to provide a balanced approach to open licensing that:
+        <ul>
+          <li>Grants broad permissions for use, modification, and distribution</li>
+          <li>Includes patent protection provisions</li>
+          <li>Requires attribution and license preservation</li>
+          <li>Protects against patent litigation abuse</li>
+          <li>Maintains simplicity and clarity</li>
+        </ul>
+      </div>
     </div>
 
     <h2>Usage Questions</h2>
 
     <div class="faq-item">
-        <div class="question">Can I use FFP-licensed software commercially?</div>
-        <div class="answer">
-            <strong>Yes!</strong> The FFP License explicitly allows commercial use. You can:
-            <ul>
-                <li>Use the software in commercial products</li>
-                <li>Sell products that include FFP-licensed code</li>
-                <li>Offer services based on FFP-licensed works</li>
-                <li>Integrate it into proprietary software</li>
-            </ul>
-        </div>
+      <div class="faq-question">Can I use FFP-licensed software commercially?</div>
+      <div class="faq-answer">
+        <strong>Yes!</strong> The FFP License explicitly allows commercial use. You can:
+        <ul>
+          <li>Use the software in commercial products</li>
+          <li>Sell products that include FFP-licensed code</li>
+          <li>Offer services based on FFP-licensed works</li>
+          <li>Integrate it into proprietary software</li>
+        </ul>
+      </div>
     </div>
 
     <div class="faq-item">
-        <div class="question">Do I need to disclose my source code?</div>
-        <div class="answer">
-            <strong>No.</strong> The FFP License does not require you to disclose or open-source your modifications or derivative works. However, you must:
-            <ul>
-                <li>Include a copy of the FFP License with any distribution</li>
-                <li>Preserve copyright and attribution notices</li>
-                <li>Not restrict recipients' rights to the original licensed work</li>
-            </ul>
-        </div>
+      <div class="faq-question">Do I need to disclose my source code?</div>
+      <div class="faq-answer">
+        <strong>No.</strong> The FFP License does not require you to disclose or open-source your modifications or derivative works. However, you must:
+        <ul>
+          <li>Include a copy of the FFP License with any distribution</li>
+          <li>Preserve copyright and attribution notices</li>
+          <li>Not restrict recipients&#39; rights to the original licensed work</li>
+        </ul>
+      </div>
     </div>
 
     <div class="faq-item">
-        <div class="question">What attribution is required?</div>
-        <div class="answer">
-            You must:
-            <ul>
-                <li>Include a copy of the FFP License with your distribution</li>
-                <li>Preserve all copyright notices present in the original work</li>
-                <li>Preserve all license notices and attribution notices</li>
-                <li>Not remove or alter existing attribution</li>
-            </ul>
-        </div>
+      <div class="faq-question">What attribution is required?</div>
+      <div class="faq-answer">
+        You must:
+        <ul>
+          <li>Include a copy of the FFP License with your distribution</li>
+          <li>Preserve all copyright notices present in the original work</li>
+          <li>Preserve all license notices and attribution notices</li>
+          <li>Not remove or alter existing attribution</li>
+        </ul>
+      </div>
     </div>
 
     <h2>Patent Questions</h2>
 
     <div class="faq-item">
-        <div class="question">Does the FFP License include a patent grant?</div>
-        <div class="answer">
-            <strong>Yes.</strong> The FFP License includes an explicit patent grant. Contributors automatically grant you a patent license for their contributions, allowing you to use the work without fear of patent litigation from contributors.
-        </div>
+      <div class="faq-question">Does the FFP License include a patent grant?</div>
+      <div class="faq-answer">
+        <strong>Yes.</strong> The FFP License includes an explicit patent license grant from each Contributor. This means contributors grant you the right to use their patents that are necessarily infringed by their contributions to the Work.
+      </div>
     </div>
 
     <div class="faq-item">
-        <div class="question">What happens if I sue someone for patent infringement?</div>
-        <div class="answer">
-            If you initiate patent litigation claiming that the FFP-licensed work infringes your patent, you automatically lose all patent rights granted to you under the FFP License for that work. This is called the "patent retaliation" clause.
-        </div>
+      <div class="faq-question">What happens if I sue someone for patent infringement?</div>
+      <div class="faq-answer">
+        If you initiate patent litigation against any entity alleging that the Work or a Contribution constitutes patent infringement, <strong>all patent licenses granted to you under the FFP License terminate automatically</strong> as of the date such litigation is filed. This is the patent retaliation clause (Section 3.2).
+      </div>
     </div>
 
-    <h2>Compatibility Questions</h2>
+    <h2>Distribution Questions</h2>
 
     <div class="faq-item">
-        <div class="question">Is FFP compatible with MIT/BSD licenses?</div>
-        <div class="answer">
-            <strong>Generally yes.</strong> FFP is permissive like MIT and BSD. You can typically:
-            <ul>
-                <li>Combine FFP-licensed code with MIT/BSD code</li>
-                <li>Use FFP-licensed libraries in MIT/BSD projects</li>
-                <li>Include MIT/BSD code in FFP projects</li>
-            </ul>
-            Always preserve the respective license notices.
-        </div>
+      <div class="faq-question">Can I distribute FFP-licensed software under a different license?</div>
+      <div class="faq-answer">
+        You may add additional terms when distributing, provided those additional terms do not conflict with, restrict, or override the rights granted to recipients under the FFP License. Recipients must always be able to receive the Work under the FFP License as well.
+      </div>
     </div>
 
     <div class="faq-item">
-        <div class="question">Can I use FFP-licensed code in proprietary software?</div>
-        <div class="answer">
-            <strong>Yes!</strong> The FFP License is permissive and allows use in proprietary software, as long as you:
-            <ul>
-                <li>Include the FFP License with your distribution</li>
-                <li>Preserve copyright and attribution notices</li>
-                <li>Don't restrict recipients' rights to the FFP-licensed portions</li>
-            </ul>
-        </div>
+      <div class="faq-question">What are the "Conditions of Distribution"?</div>
+      <div class="faq-answer">
+        When distributing the Work or Derivative Works, you must:
+        <ul>
+          <li>Include a copy of the FFP License (Section 4.1)</li>
+          <li>Preserve all copyright, license, and attribution notices (Section 4.2)</li>
+          <li>Not impose measures that lock down recipients&#39; rights (Section 4.3)</li>
+        </ul>
+      </div>
     </div>
 
-    <h2>Compliance Questions</h2>
+    <h2>License Termination Questions</h2>
 
     <div class="faq-item">
-        <div class="question">What files must I include when distributing FFP-licensed software?</div>
-        <div class="answer">
-            You must include:
-            <ol>
-                <li>A copy of the FFP License (typically in a LICENSE file)</li>
-                <li>All copyright notices from the original work</li>
-                <li>All license notices and attribution notices</li>
-            </ol>
-        </div>
+      <div class="faq-question">When does my license terminate?</div>
+      <div class="faq-answer">
+        Your license terminates automatically if you:
+        <ul>
+          <li>Fail to include the license text with distributions (Section 4.1)</li>
+          <li>Remove copyright or attribution notices (Section 4.2)</li>
+          <li>Lock down recipients&#39; rights (Section 4.3)</li>
+          <li>Initiate patent litigation alleging infringement (Section 3.2)</li>
+        </ul>
+      </div>
     </div>
 
     <div class="faq-item">
-        <div class="question">Can I modify the copyright notice?</div>
-        <div class="answer">
-            <strong>No.</strong> You must preserve existing copyright notices. However:
-            <ul>
-                <li>You can add your own copyright notice for your contributions</li>
-                <li>You cannot remove or alter existing notices</li>
-                <li>You should add your copyright to modified files</li>
-            </ul>
-        </div>
+      <div class="faq-question">Can my license be reinstated after termination?</div>
+      <div class="faq-answer">
+        <strong>Yes</strong>, for most violations (except patent litigation). If you cure your violation, your license is reinstated:
+        <ul>
+          <li>Provisionally, unless the copyright holder explicitly terminates it</li>
+          <li>Permanently, if the copyright holder fails to notify you of the violation within 60 days of cessation</li>
+        </ul>
+        Note: Patent litigation termination (Section 3.2) cannot be reinstated.
+      </div>
     </div>
 
-    <h2>Getting Help</h2>
+    <h2>Comparison Questions</h2>
 
     <div class="faq-item">
-        <div class="question">Where can I get more information?</div>
-        <div class="answer">
-            <ul>
-                <li><strong>Official Website</strong>: <a href="https://druvx13.github.io/FFP/">https://druvx13.github.io/FFP/</a></li>
-                <li><strong>GitHub Repository</strong>: <a href="https://github.com/druvx13/FFP">https://github.com/druvx13/FFP</a></li>
-                <li><strong>License Text</strong>: <a href="index.html">Full License</a></li>
-                <li><strong>Comparison Guide</strong>: <a href="comparison.html">License Comparison</a></li>
-            </ul>
-        </div>
+      <div class="faq-question">How does FFP compare to MIT?</div>
+      <div class="faq-answer">
+        Both are permissive licenses, but FFP adds:
+        <ul>
+          <li>An explicit patent license grant</li>
+          <li>Patent retaliation provisions</li>
+          <li>More detailed definitions and terms</li>
+          <li>Explicit prohibition on "lockdown" of the licensed work</li>
+        </ul>
+        See the full <a href="comparison.html">License Comparison</a> page.
+      </div>
     </div>
 
-    <footer>
-        <p>&copy; FFP License Project. Released under the FFP (Freedom For People) License.</p>
-        <p><a href="index.html">Back to License</a> | <a href="https://github.com/druvx13/FFP">GitHub</a></p>
+    <div class="faq-item">
+      <div class="faq-question">How does FFP compare to Apache 2.0?</div>
+      <div class="faq-answer">
+        Both include patent grants and retaliation clauses. Key differences:
+        <ul>
+          <li>FFP does <strong>not</strong> require documenting changes (Apache 2.0 does)</li>
+          <li>FFP does <strong>not</strong> require a NOTICE file</li>
+          <li>FFP has a more flexible cure provision for violations</li>
+        </ul>
+        See the full <a href="comparison.html">License Comparison</a> page.
+      </div>
+    </div>
+
+    <h2>New in v2.0</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">What is new in FFP License v2.0?</div>
+      <div class="faq-answer">
+        Version 2.0 addresses several gaps identified in the v1.0 audit:
+        <ul>
+          <li><strong>AI/ML Training</strong> (Section 4.5): Explicit permission to use the Work as training data for machine learning models.</li>
+          <li><strong>Indemnification</strong> (Section 11): You agree to hold harmless the Licensor and Contributors from claims arising from Your use.</li>
+          <li><strong>Export Controls</strong> (Section 12): You are responsible for compliance with applicable export laws.</li>
+          <li><strong>Governing Law</strong> (Section 17): International default with arbitration preference for dispute resolution.</li>
+          <li><strong>Version Upgrade Path</strong> (Section 16): The &#34;v2.0 or later&#34; designation is now formally supported.</li>
+          <li><strong>Stronger definitions</strong>: <em>Legal Entity</em>, <em>Source Form</em>, <em>Object Form</em>, and <em>Effective Date</em> added.</li>
+          <li><strong>Contributor warranty</strong> (Section 5): Contributors represent they have rights to submit their contributions.</li>
+          <li><strong>Broader patent clause</strong>: Section 3.2 now covers threats of litigation, not just filed suits.</li>
+          <li><strong>Jurisdictional carve-outs</strong>: Warranty and liability disclaimers now include minimum-protection fallbacks for jurisdictions that prohibit full exclusion.</li>
+          <li><strong>30-day cure window</strong>: Section 8.2 now specifies an explicit cure period for reinstatement.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Is FFP License v2.0 backward compatible with v1.0?</div>
+      <div class="faq-answer">
+        <strong>Yes, in practice.</strong> v2.0 is a <em>superset</em> of v1.0 rights — all permissions granted by v1.0 are preserved. However, v2.0 adds new obligations (indemnification, export controls) that users should be aware of. Works already distributed under v1.0 remain under v1.0 unless the Licensor explicitly re-licenses them under v2.0 or "v2.0 or later."
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I use FFP-licensed works to train AI or machine learning models?</div>
+      <div class="faq-answer">
+        <strong>Yes.</strong> Section 4.5 of FFP License v2.0 explicitly permits using the Work as training data, fine-tuning data, or evaluation data for machine learning models. Resulting models are Derivative Works only if they reproduce substantial portions of the Work in their outputs.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What does the indemnification clause mean for me?</div>
+      <div class="faq-answer">
+        Section 11 requires You to defend, indemnify, and hold harmless the Licensor and Contributors from claims arising from:
+        <ul>
+          <li>Your use or distribution of the Work;</li>
+          <li>Your violation of this License;</li>
+          <li>Any claim that Your Contribution infringes a third-party IP right; or</li>
+          <li>Any negligent act by You in connection with the Work.</li>
+        </ul>
+        This is a standard commercial clause intended to protect upstream contributors.
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p>&copy; FFP License Project. Released under the FFP (Freedom For People) License.</p>
+      <p><a href="index.html">License Text</a> &nbsp;|&nbsp; <a href="https://github.com/druvx13/FFP" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     </footer>
-</div>
+  </div>
+</main>
 
+<script src="js/main.js" defer></script>
 </body>
 </html>

@@ -79,13 +79,28 @@ Documentation improvements are always welcome:
 
 ### Enhancing the Website
 
-Contributions to the website (/docs folder):
+Contributions to the website (`docs/` folder):
 
-- **Improve styling and design**
-- **Fix responsive design issues**
-- **Add accessibility improvements**
-- **Improve navigation**
-- **Add useful features** (search, better copy functionality, etc.)
+- **Improve styling and design** — edit `docs/css/styles.css`
+- **Fix responsive design issues** — breakpoints and mobile layout live in `docs/css/styles.css`
+- **Add accessibility improvements** — aria attributes, semantic HTML in the `.html` files
+- **Improve navigation** — shared nav in each page's `<nav class="site-nav">` block
+- **Add useful features** — shared behaviour lives in `docs/js/main.js`
+
+#### Website Directory Layout
+
+```
+docs/
+├── index.html       ← License text page
+├── faq.html         ← FAQ page
+├── comparison.html  ← Comparison page
+├── badges.html      ← Badge gallery page
+├── css/
+│   └── styles.css   ← Shared stylesheet (single source of truth for all styling)
+├── js/
+│   └── main.js      ← Shared JavaScript (nav toggle, clipboard helpers)
+└── badges/          ← SVG badge files
+```
 
 ### Adding Examples and Resources
 
@@ -131,11 +146,12 @@ For documentation:
 - Verify formatting renders properly
 
 #### Website Changes
-- Open `/docs/index.html` in a web browser
+- Open `docs/index.html` in a web browser (no build step required — it's plain HTML/CSS/JS)
 - Test on different browsers (Chrome, Firefox, Safari, Edge)
-- Test responsive design on different screen sizes
-- Verify all navigation links work
-- Test copy functionality
+- Test responsive design on different screen sizes (especially ≤ 680 px for the mobile nav)
+- Enable your browser's "prefer dark color scheme" emulation to verify dark-mode rendering
+- Verify all navigation links work across all four pages
+- Test clipboard copy functionality on `index.html` and `badges.html`
 - Check for console errors
 
 ## Contribution Guidelines
@@ -164,9 +180,11 @@ For documentation:
 ### Special Considerations for License Text
 
 ⚠️ **Important**: The license legal text in the LICENSE file and the terms section of the website should only be modified:
-- With legal review and approval
+- With maintainer review and explicit written approval
 - For critical bug fixes that affect legal interpretation
-- For official version updates
+- For official version updates (e.g., v2.0 → v3.0)
+
+The current authoritative version is **FFP License v2.0**. Any proposed changes to the legal text must be discussed in a GitHub Issue before a pull request is opened.
 
 For the license text:
 - Translation or formatting changes must preserve legal meaning
@@ -262,9 +280,20 @@ If you have questions about contributing:
 
 ## License
 
-By contributing to the FFP License project, you agree that your contributions will be licensed under the FFP (Freedom For People) License, Version 1.0.
+By contributing to the FFP License project, you agree that your contributions will be licensed under the FFP (Freedom For People) License, Version 2.0 (or any later version published by the FFP License Project).
 
 For documentation and non-legal content, you also agree that your contributions may be relicensed as needed for compatibility or legal reasons.
+
+### Contributor License Agreement (CLA)
+
+By submitting any Contribution to this repository, you represent and warrant that:
+
+1. **You have the right** to grant the license described in Section 5 of the FFP License v2.0.
+2. **Your Contribution is original** or you have obtained sufficient rights to submit it under these terms.
+3. **You understand** that your Contribution may be made publicly available and incorporated into the Work.
+4. **You accept** that your Contribution is licensed inbound on the same terms as the Work (FFP License v2.0, inbound = outbound).
+
+No separate CLA document is required; your act of submitting a pull request constitutes agreement to the above.
 
 ---
 

@@ -4,7 +4,7 @@ This document compares the FFP (Freedom For People) License with other popular o
 
 ## Quick Comparison Table
 
-| Feature | FFP v1.0 | MIT | Apache 2.0 | GPL v3 | BSD 3-Clause |
+| Feature | FFP v2.0 | MIT | Apache 2.0 | GPL v3 | BSD 3-Clause |
 |---------|----------|-----|------------|--------|--------------|
 | **Permissions** |
 | Commercial Use | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -23,6 +23,10 @@ This document compares the FFP (Freedom For People) License with other popular o
 | Warranty | ❌ | ❌ | ❌ | ❌ | ❌ |
 | Trademark | ❌ | ❌ | ❌ | ❌ | ❌ |
 | Patent Retaliation | ✅ | ❌ | ✅ | ✅ | ❌ |
+| AI/ML Training | ✅ Explicit | ❌ Implicit | ❌ Implicit | ✅ Implicit | ❌ Implicit |
+| Indemnification | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Export Controls | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Version Upgrade Path | ✅ | ❌ | ❌ | ✅ | ❌ |
 
 ## Detailed Comparisons
 
@@ -245,6 +249,24 @@ Choose FFP when you want a modern, permissive license with patent protection tha
 
 ---
 
-**Note**: This comparison is for informational purposes only. For specific legal advice, consult with a qualified attorney.
 
 **Last Updated**: 2026
+
+## FFP v1.0 vs v2.0
+
+| Aspect | v1.0 | v2.0 |
+|--------|------|------|
+| `Source Form` / `Object Form` definitions | ❌ Absent | ✅ Added |
+| `Legal Entity` definition | ❌ Absent | ✅ Added |
+| `Effective Date` definition | ❌ Absent | ✅ Added |
+| Patent clause covers threats | ❌ Filed suits only | ✅ Filed + threatened |
+| DRM/TPM explicitly named in No-Lockdown | ❌ Generic "measures" | ✅ Explicitly named |
+| AI/ML Training permission | ❌ Not addressed | ✅ Section 4.5 |
+| Contributor representation/warranty | ❌ Absent | ✅ Section 5 |
+| Indemnification clause | ❌ Absent | ✅ Section 11 |
+| Export Controls notice | ❌ Absent | ✅ Section 12 |
+| Entire Agreement clause | ❌ Absent | ✅ Section 15 |
+| Version upgrade path | ❌ Absent | ✅ Section 16 |
+| Governing Law / Dispute Resolution | ❌ Absent | ✅ Section 17 |
+| Jurisdictional carve-outs (warranty/liability) | ❌ Absent | ✅ Sections 9 & 10 |
+| Cure window specified (reinstatement) | ❌ Unspecified | ✅ 30-day cure window |
