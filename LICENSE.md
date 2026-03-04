@@ -1,0 +1,226 @@
+# FFP (FREEDOM FOR PEOPLE) LICENSE  
+**Version 2.0**
+
+> Copyright (C) 2026 FFP License Project
+
+Everyone is permitted to copy and distribute verbatim copies of this license document. You may also distribute modified copies of this license document for the sole purpose of formatting changes or translation, provided that the legal meaning and effect of the License is not altered and that the modified copy is clearly marked as an unofficial translation or formatting variant.
+
+---
+
+## Preamble
+
+The FFP (Freedom For People) License is a free and permissive license intended to maximize human freedom by ensuring that software, documentation, art, media, data, and other copyrightable works remain available for anyone to use, study, modify, and share.
+
+Version 2.0 strengthens the original v1.0 text by adding clearer definitions, an explicit Indemnification clause, stronger Warranty and Liability disclaimers with jurisdictional carve-outs, an Export Controls notice, explicit AI/ML training permissions, a path for future license versions, and a governing law provision.
+
+This License grants broad permission to use, copy, modify, distribute, and sell the Work, while requiring that recipients receive a copy of this License and that copyright and attribution notices are preserved.
+
+This License includes a patent license grant from Contributors and protects the commons by terminating patent rights granted under this License if a recipient initiates patent litigation alleging that the Work infringes a patent.
+
+The Work is provided without warranty, and the Licensor and Contributors disclaim liability for damages.
+
+The precise terms and conditions follow.
+
+---
+
+## TERMS AND CONDITIONS
+
+### 0. Definitions
+
+* **"This License"** refers to version 2.0 of the FFP (Freedom For People) License.
+* **"Copyright"** also means copyright-like laws that apply to other kinds of works, such as semiconductor masks.
+* **"Legal Entity"** means the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, "control" means:
+  1. the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or
+  2. ownership of fifty percent (50%) or more of the outstanding shares, or
+  3. beneficial ownership of such entity.
+* **"Work"** means the original work of authorship made available under this License, including software, documentation, hardware design files, art, data, media, or any other copyrightable subject matter, as indicated by a copyright notice that is included in or attached to the work.
+* **"Source Form"** means the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.
+* **"Object Form"** means any form resulting from mechanical transformation or translation of a Source Form, including but not limited to compiled object code, generated documentation, and conversions to other media types.
+* **"Contribution"** means any original work of authorship, including any modifications or additions to the Work or Derivative Works thereof, that is intentionally submitted for inclusion in the Work by a Contributor, whether in Source Form or Object Form, whether submitted by an individual or on behalf of a Legal Entity.
+* **"Derivative Work"** means any work that is based upon the Work or any Contribution and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works do not include works that remain separable from, or merely link to (or bind by name to), the interfaces of the Work and Derivative Works thereof.
+* **"Distribute"** (or **"Distribution"**) means to reproduce, publish, transfer, make available, or otherwise convey a copy of the Work, Contributions, or Derivative Works to any third party, whether in Source Form, Object Form, or any other form, by any means. Mere interaction with a user through a computer network, without transfer of a copy, is not Distribution.
+* **"You"** (or **"Your"**) means an individual or Legal Entity exercising permissions granted by this License.
+* **"Licensor"** means the copyright holder(s) or the Legal Entity authorized by the copyright holder(s) that grants this License.
+* **"Contributor"** means the Licensor and any individual or Legal Entity on behalf of whom a Contribution has been submitted to the Licensor and accepted for inclusion in the Work.
+* **"Effective Date"** means the date on which You first exercise any right granted under this License.
+
+### 1. Basic Permissions
+
+All rights granted under this License are granted on a worldwide, royalty-free, non-exclusive, perpetual, and irrevocable basis, provided the conditions stated in this License are met.
+
+You may use, reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and Distribute the Work and Derivative Works for any purpose, including commercial, private, educational, research, or governmental purposes.
+
+### 2. Grant of Copyright License
+
+#### 2.1 Licensor Grant
+Subject to the terms and conditions of this License, the Licensor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and Distribute the Work and such Derivative Works in Source Form or Object Form.
+
+#### 2.2 Contributor Grant
+Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and Distribute such Contributions and Derivative Works thereof in Source Form or Object Form.
+
+#### 2.3 Additional Terms
+You may Distribute the Work or Derivative Works under additional or different terms, provided that:
+
+* (a) such additional or different terms do not conflict with, restrict, or override the rights granted to recipients under this License; and
+* (b) recipients are always able to obtain the Work under this License.
+
+Any additional terms that purport to limit the rights expressly granted by this License shall be null and void with respect to the Work as licensed hereunder.
+
+### 3. Grant of Patent License
+
+#### 3.1 Patent Grant
+Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in Section 8) patent license to make, have made, use, offer for sale, sell, import, and otherwise transfer the Work and Contributions, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by the combination of their Contribution(s) with the Work to which such Contribution(s) were submitted.
+
+#### 3.2 Patent Litigation (Defensive Termination)
+If You initiate, maintain, or threaten patent litigation — including a cross-claim or counterclaim in a lawsuit — against any person or Legal Entity alleging that the Work, a Contribution incorporated in the Work, or a combination of the Work with any other software, constitutes direct, contributory, or induced patent infringement, then all patent licenses granted to You under this License for the Work shall terminate as of the date such litigation is filed or threatened.
+
+### 4. Conditions of Distribution
+
+#### 4.1 License Text Requirement
+When You Distribute the Work, Contributions, or Derivative Works, You must:
+
+* (a) include a complete, unmodified copy of this License in a file named `LICENSE` (or `COPYING`) placed in the root directory or another prominent and accessible location; and
+* (b) provide a URI or hyperlink to the canonical license text if the distribution medium makes inclusion of the full text impractical.
+
+#### 4.2 Preservation of Notices
+You must retain, in all copies of the Work and Derivative Works that You Distribute, all copyright notices, patent notices, trademark notices, attribution notices, and license notices that are present in the Source Form of the Work, except where removal is expressly required by applicable law.
+
+#### 4.3 No Lockdown of the Licensed Work
+When You Distribute the Work or Derivative Works, You may not impose legal, contractual, or technological measures — including Digital Rights Management (DRM) and Technical Protection Measures (TPM) — that effectively prevent recipients from exercising the rights expressly granted to them under this License with respect to the Work or Derivative Works.
+
+This section does not restrict:
+
+* (a) agreements or technical measures unrelated to the exercise of rights in the Work itself;
+* (b) encryption, authentication, or security measures applied to the Work, provided such measures do not prevent authorized recipients from accessing the Work under this License; or
+* (c) measures required by applicable law.
+
+#### 4.4 Hardware and Physical Works
+Where the Work includes design files for hardware or physical objects, this License grants rights only to the extent that applicable law recognizes copyright or related rights in such design files. This License grants no patent rights in hardware except as expressly stated in Section 3.
+
+#### 4.5 AI and Machine Learning
+You may use the Work, Contributions, and Derivative Works as training data, fine-tuning data, or evaluation data for machine learning models, and may incorporate outputs of such processes into Derivative Works, subject to the conditions of Sections 4.1, 4.2, and 4.3. Models trained on the Work are themselves Derivative Works and are subject to this License only to the extent that the resulting model reproduces substantial portions of the Work in its outputs.
+
+### 5. Contributions (Inbound = Outbound)
+
+By submitting a Contribution to the Work, You hereby grant the Licensor and all recipients a license to Your Contribution under the terms of this License, unless You and the Licensor have executed a separate written agreement specifying different terms.
+
+If You submit a Contribution and wish it to be governed by different license terms, You must clearly indicate those terms in writing at the time of submission, and the Contribution will be accepted only upon the Licensor's explicit written agreement.
+
+You represent and warrant that You are legally entitled to grant the rights set out in this Section and that each of Your Contributions is Your original creation or that You have sufficient rights to submit the Contribution on the terms of this License.
+
+### 6. Trademarks
+
+This License does not grant any right to use any trade name, trademark, service mark, logo, or product name of the Licensor or any Contributor, except as required for:
+
+* (a) reasonable and customary use in describing the origin of the Work,
+* (b) reproducing required copyright or attribution notices, or
+* (c) both.
+
+### 7. No Endorsement
+
+Nothing in this License shall be construed to permit You to assert or imply that the Licensor or any Contributor sponsors, endorses, is affiliated with, or has certified You or Your use of the Work, without prior written permission from the Licensor or the relevant Contributor.
+
+### 8. Termination and Reinstatement
+
+#### 8.1 Automatic Termination
+Your rights under this License terminate automatically and immediately, without notice, if You materially fail to comply with any term of this License, including the conditions of Section 4 (Conditions of Distribution) or Section 3.2 (Defensive Termination).
+
+#### 8.2 Reinstatement for Cure
+If You cease all violations of this License and cure the violation within thirty (30) days of becoming aware of the violation (or within thirty (30) days of receiving written notice from the Licensor), then Your license from that copyright holder is reinstated:
+
+* (a) provisionally, unless and until the copyright holder explicitly and finally terminates Your license in writing; and
+* (b) permanently, if the copyright holder does not provide written notice of the violation within sixty (60) days after the cessation of all violations.
+
+Reinstatement under Section 8.2 does not affect any right the copyright holder may have to seek remedies for Your violation of this License.
+
+#### 8.3 Patent Termination
+If Your license is terminated under Section 3.2 (Defensive Termination), it is not subject to reinstatement under Section 8.2.
+
+### 9. Disclaimer of Warranty
+
+> TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE WORK AND ALL CONTRIBUTIONS ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING WITHOUT LIMITATION ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, ACCURACY, QUIET ENJOYMENT, AND NON-INFRINGEMENT.
+>
+> THE ENTIRE RISK AS TO THE QUALITY, PERFORMANCE, ACCURACY, AND CORRECTNESS OF THE WORK IS WITH YOU.
+>
+> IN JURISDICTIONS THAT DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, THE ABOVE EXCLUSION MAY NOT APPLY TO YOU, BUT SHALL BE LIMITED TO THE MINIMUM WARRANTY REQUIRED BY APPLICABLE LAW.
+
+### 10. Limitation of Liability
+
+> TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE LICENSOR, ANY COPYRIGHT HOLDER, OR ANY CONTRIBUTOR BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY CLAIM, LOSS, COST, OR DAMAGE OF ANY KIND — WHETHER IN AN ACTION OF CONTRACT, TORT (INCLUDING NEGLIGENCE OR STRICT LIABILITY), BREACH OF STATUTORY DUTY, OR OTHERWISE — ARISING OUT OF OR IN CONNECTION WITH THIS LICENSE, THE WORK, ANY CONTRIBUTION, OR THE USE OR INABILITY TO USE THE WORK, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+>
+> THIS LIMITATION COVERS ALL CATEGORIES OF DAMAGES, INCLUDING DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, CONSEQUENTIAL, OR PUNITIVE DAMAGES, AND LOSS OF PROFITS, DATA, BUSINESS, OR GOODWILL.
+>
+> IN JURISDICTIONS THAT DO NOT ALLOW THE COMPLETE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE LIABILITY OF THE LICENSOR, COPYRIGHT HOLDERS, AND CONTRIBUTORS SHALL BE LIMITED TO THE MINIMUM AMOUNT PERMITTED BY APPLICABLE LAW.
+
+### 11. Indemnification
+
+You agree to defend, indemnify, and hold harmless the Licensor, Contributors, and their respective officers, directors, employees, and agents from and against any and all claims, liabilities, damages, losses, costs, and expenses (including reasonable legal fees) arising from or relating to:
+
+* (a) Your use or Distribution of the Work or Derivative Works;
+* (b) Your violation of any term of this License;
+* (c) any claim that Your Contribution infringes any third-party intellectual property right; or
+* (d) any negligent or wrongful act or omission by You in connection with the Work.
+
+### 12. Export Controls
+
+The Work may be subject to export control laws and regulations, including without limitation the Export Administration Regulations (EAR) of the United States and regulations of other jurisdictions. You are solely responsible for complying with all applicable export and re-export control laws and regulations in connection with Your use, distribution, or other transfer of the Work.
+
+### 13. Acceptance
+
+By exercising any right granted under this License, or by submitting a Contribution, You accept and agree to be bound by the terms and conditions of this License. If You do not agree to these terms, You may not exercise any rights granted hereunder.
+
+### 14. Severability
+
+If any provision of this License is held by a court of competent jurisdiction to be invalid, illegal, or unenforceable in any respect, such invalidity shall not affect the validity of the remaining provisions. In such case, the invalid or unenforceable provision shall be modified to the minimum extent necessary to make it valid and enforceable while preserving the original intent.
+
+### 15. Entire Agreement
+
+This License constitutes the entire agreement between You and the Licensor with respect to the subject matter hereof and supersedes all prior and contemporaneous agreements, understandings, and representations, whether written or oral, relating to such subject matter.
+
+### 16. Later Versions
+
+The FFP License Project may publish revised or updated versions of this License. Each version will be given a distinguishing version number. You may always use, copy, modify, or Distribute the Work under the terms of the version under which you received it. If the Licensor specifies "version 2.0 or later," You may also choose to follow the terms of any later published version.
+
+### 17. Governing Law and Dispute Resolution
+
+This License is an international license intended for worldwide use. In the absence of a contrary choice agreed in writing between the parties:
+
+* (a) this License shall be governed by and construed in accordance with the principles of international intellectual property law and, where applicable, the law of the jurisdiction in which the Licensor is domiciled;
+* (b) disputes arising under or in connection with this License shall be resolved, to the extent possible, through good-faith negotiation between the parties; and
+* (c) if negotiation fails, disputes shall be submitted to binding arbitration or the courts of competent jurisdiction in the Licensor's domicile, unless both parties agree in writing to another forum.
+
+> **END OF TERMS AND CONDITIONS**
+
+---
+
+## HOW TO APPLY THE FFP LICENSE TO YOUR WORK
+
+To apply the FFP (Freedom For People) License v2.0 to your Work, follow the steps below.
+
+It is recommended that you:
+
+1. Place a full copy of this License in a file named `LICENSE` (or `COPYING`) in the top-level directory of your Work.
+2. Add the notice below to the main README file and/or the header of important source files.
+3. Ensure that all copyright, patent, attribution, and license notices present in the Work are preserved in any redistributed copies or Derivative Works, as required by Section 4.
+
+Replace the bracketed placeholders with your own information.
+
+```text
+Copyright (C) [YEAR] [FULL NAME OF LICENSOR OR ORGANIZATION]
+
+This Work is licensed under the FFP (Freedom For People) License,
+Version 2.0.
+
+A copy of this License must be included in the LICENSE file
+distributed with this Work.
+
+You may also obtain a copy of the License at:
+https://github.com/druvx13/FFP
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED. SEE THE LICENSE FOR DETAILS.
+```
+
+> If your Work includes interactive user interfaces, it is recommended (but not required) to display a notice stating that the Work is licensed under the FFP License v2.0 and that it comes without warranty.
+
+> **END OF APPLICATION GUIDE**
